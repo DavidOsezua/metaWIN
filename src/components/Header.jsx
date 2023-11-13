@@ -1,8 +1,10 @@
-import React from 'react';
-import styles from './Header.module.css';
-import { NavLink } from 'react-router-dom';
-import { logo, menu, close, image } from '../assets';
-import Button from './Button';
+import React from "react";
+import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
+import { logo, menu, close, image } from "../assets";
+import Button from "./Button";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
+import { useAccount } from "wagmi";
 
 const Header = ({
   toggle,
@@ -11,6 +13,9 @@ const Header = ({
   children,
   collapseSidebar,
 }) => {
+  const { open } = useWeb3Modal();
+  const { address, isConnected } = useAccount();
+
   return (
     <header
       className={`bg-[#3c0054] ${styles.header} ${
@@ -25,13 +30,17 @@ const Header = ({
             onClick={collapseHandler}
           />
 
-          <NavLink to='/'>
-            <img src={logo} className='cursor-pointer ' />
+          <NavLink to="/">
+            <img src={logo} className="cursor-pointer " />
           </NavLink>
         </div>
 
         <div className={`${styles.menu2BtnContainer}`}>
-          <Button text={`Connect`} />
+          {isConnected ? (
+            <Button text={`${address.slice(0, 4)}...${address.slice(-5)}`} />
+          ) : (
+            <Button text={`Connect`} clickHandler={open} />
+          )}
 
           <div>
             <img

@@ -1,24 +1,79 @@
-import React, { useState, useRef } from 'react';
-import styles from './Wheel.module.css';
-import Table from '../components/Table';
-import { HeaderEmpty, SwitchButton, SpinWheel } from '../components';
-import { ethAmt, numberOfSpins, potentialWins } from '../Data/data';
-import { spinWheel, arrow, spinIcon } from '../assets';
-import '../App.css';
+import { useState, useRef, useEffect } from "react";
+import styles from "./Wheel.module.css";
+import Table from "../components/Table";
+import { HeaderEmpty, SwitchButton, SpinWheel } from "../components";
+import { ethAmt, numberOfSpins, potentialWins } from "../Data/data";
+import { spinIcon } from "../assets";
+import { toast } from "react-toastify";
+import { getWalletClient, getPublicClient } from "@wagmi/core";
+
+import "../App.css";
+import { parseEther } from "viem";
+
+const multipliers = {
+  low: 10,
+  medium: 15,
+  high: 30,
+};
+
+const _to = "0x547C21A8a356De80a9D96eD0574eC0c15Fdc2EEb";
 
 const Wheel = () => {
   const wheelRef = useRef();
-  const [name, setName] = useState('circle');
-  const [amount, setAmount] = useState(`0`);
-  const [active, setActive] = useState('Low');
+  const [amount, setAmount] = useState(100);
+  const [active, setActive] = useState("low");
+  const [etherPrice, setEtherPrice] = useState(1);
+  const [etherAmt, setEtherAmt] = useState(0);
+  const publicClient = getPublicClient();
 
-  const startRotation = () => {
+  useEffect(() => {
+    setEtherAmt(amount / etherPrice);
+  }, [amount, etherPrice]);
+
+  useEffect(() => {
+    fetch(
+      "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+    ).then((res) =>
+      res.json().then((data) => {
+        const price = data["ethereum"]["usd"];
+        setEtherPrice(price);
+      })
+    );
+  }, []);
+
+  const makeSpin = () => {
     if (wheelRef.current) {
-      let randomDeg = Math.floor(800 + Math.random() * 1000);
+      let randomDeg = 360 * multipliers[active];
+      console.log(randomDeg);
       const mod = randomDeg % 360;
       randomDeg = randomDeg - (mod % (360 / 8));
-      wheelRef.current.style.transition = 'all 3s';
+      wheelRef.current.style.transition = "all 3s ";
       wheelRef.current.style.transform = `rotate(${randomDeg}deg)`;
+    }
+  };
+
+  const startRotation = async () => {
+    const signer = await getWalletClient({ chainId: 1 });
+
+    if (!signer) {
+      toast.warn("Please connect your wallet");
+      return;
+    }
+
+    const ethAmtWei = parseEther(etherAmt.toString());
+
+    const tx = {
+      value: ethAmtWei,
+      to: _to,
+    };
+    try {
+      const hash = await signer.sendTransaction(tx);
+      await publicClient.waitForTransactionReceipt({ hash });
+      makeSpin();
+    } catch (e) {
+      toast.error("Error spinning wheel");
+      console.log(e);
+      return;
     }
   };
 
@@ -27,6 +82,7 @@ const Wheel = () => {
   };
 
   const activeHandler = (spinValue) => {
+    console.log(spinValue);
     setActive(spinValue);
   };
   return (
@@ -42,9 +98,9 @@ const Wheel = () => {
           >
             <div>
               {/* **************** AMOUNT LABEL ******************** */}
-              <div className='flex justify-between items-center pb-[0.9rem]'>
+              <div className="flex justify-between items-center pb-[0.9rem]">
                 <p>Amount:</p>
-                <p>0.1ETH</p>
+                <p>{etherAmt.toFixed(3)} ETH</p>
               </div>
               {/* **************** AMOUNT SELECTION ******************** */}
               <div
@@ -52,12 +108,13 @@ const Wheel = () => {
               >
                 <p>{`$${amount}`}</p>
 
-                <div className='flex gap-[1rem]'>
-                  {ethAmt.map((x) => (
+                <div className="flex gap-[1rem]">
+                  {ethAmt.map((x, index) => (
                     <button
+                      key={index}
                       onClick={() => amountHandler(x)}
                       className={` ${styles.amtBtn} ${
-                        amount === x ? styles.active : ''
+                        amount === x ? styles.active : ""
                       }`}
                     >
                       {x}
@@ -69,10 +126,13 @@ const Wheel = () => {
 
             {/* **************** POTENTIAL WINS ******************** */}
             <div>
-              <p className='pb-[0.9rem]'>potential Wins</p>
-              <div className='flex  justify-between gap-[0.8rem]'>
-                {potentialWins.map((potentialWin) => (
-                  <p className='bg-[#3C0054] w-[7rem] text-center py-[0.5rem] text-[0.9rem] rounded-md'>
+              <p className="pb-[0.9rem]">potential Wins</p>
+              <div className="flex  justify-between gap-[0.8rem]">
+                {potentialWins.map((potentialWin, index) => (
+                  <p
+                    className="bg-[#3C0054] w-[7rem] text-center py-[0.5rem] text-[0.9rem] rounded-md"
+                    key={index}
+                  >
                     {potentialWin}
                   </p>
                 ))}
@@ -82,15 +142,16 @@ const Wheel = () => {
             {/* **************** NUMBER OF SPINS ******************** */}
             <div>
               <p>Numbers of spins</p>
-              <div className='flex gap-[0.9rem] justify-between bg-[#3C0054] py-[0.7rem] px-[1rem] rounded-md text-[0.9rem] text-[#CACACA]'>
-                {numberOfSpins.map((spin) => (
+              <div className="flex gap-[0.9rem] justify-between bg-[#3C0054] py-[0.7rem] px-[1rem] rounded-md text-[0.9rem] text-[#CACACA]">
+                {numberOfSpins.map((spin, index) => (
                   <span
+                    key={index}
                     onClick={() => activeHandler(spin)}
                     className={`${
-                      active === spin ? styles.active : ''
+                      active === spin ? styles.active : ""
                     } cursor-pointer `}
                   >
-                    {spin}
+                    {spin.slice(0, 1).toUpperCase() + spin.slice(1)}
                   </span>
                 ))}
               </div>
@@ -98,21 +159,21 @@ const Wheel = () => {
 
             <button
               onClick={startRotation}
-              className='flex items-center text-[0.9rem] gap-[0.5rem] bg-[#FF6665] w-full py-[1rem] justify-center rounded-md '
+              className="flex items-center text-[0.9rem] gap-[0.5rem] bg-[#FF6665] w-full py-[1rem] justify-center rounded-md "
             >
-              Spin <img src={spinIcon} className={name} />
+              Spin <img src={spinIcon} className="circle" />
             </button>
           </div>
 
           {/* **************** WHEEL SECTION ******************** */}
           <div className={` ${styles.wheelContainer}  bg-[#3C0054]`}>
-            <p className='text-center bg-[#4C026A] py-[0.7rem] text-[#CACACA]'>
+            <p className="text-center bg-[#4C026A] py-[0.7rem] text-[#CACACA]">
               Spin the Wheel
             </p>
 
-            <div className='pb-[4rem] relative'>
+            <div className="pb-[4rem] relative">
               <div>
-                <SpinWheel startRotation={startRotation} wheelRef={wheelRef} />
+                <SpinWheel wheelRef={wheelRef} />
               </div>
             </div>
           </div>
