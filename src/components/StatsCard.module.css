@@ -1,0 +1,10 @@
+.container > * + * {
+  margin-top: 0.8rem;
+}
+
+.container {
+  background-color: #560078;
+  width: 282px;
+  min-height: 183px;
+  padding: 1rem;
+}

@@ -1,0 +1,43 @@
+/* Table.css */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.tableStyle {
+  border-collapse: collapse;
+  min-width: 100%;
+  color: #fff;
+}
+
+.thStyle {
+  background: #3c0054;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.tdStyle {
+  padding: 8px 16px;
+  border-bottom: 1px solid #9c9c9c;
+  font-size: 0.8rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .tableStyle {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .tdStyle,
+  .thStyle {
+    padding: 4px 8px; /* Reduce padding for smaller screens */
+  }
+
+  .image {
+    width: 1rem;
+  }
+
+  .UserImage {
+    width: 1.8rem;
+  }
+}

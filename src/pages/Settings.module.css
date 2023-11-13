@@ -1,0 +1,14 @@
+.section {
+  min-height: 100vh;
+  background: #4c0069;
+}
+
+.settingsContainer {
+  display: grid;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.settingsContainer > * + * {
+  margin-top: 2rem;
+}

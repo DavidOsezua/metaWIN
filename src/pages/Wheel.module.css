@@ -1,0 +1,63 @@
+.section {
+  min-height: 100vh;
+  background: #4c0069;
+}
+.container > * + * {
+  margin-top: 2rem;
+}
+
+.container {
+  padding: 2rem 0.5rem;
+}
+
+.top {
+  flex-direction: column-reverse;
+}
+
+.infoContainer > * + * {
+  margin-top: 2rem;
+}
+
+.wheelContainer {
+  padding: 1.5rem;
+}
+
+.wheelContainer > * + * {
+  margin-top: 3rem;
+}
+
+.amtBtn {
+  background-color: #560378;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #70008c;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+
+
+@media screen and (min-width: 913px) {
+  .container {
+    margin-left: 4rem;
+    padding-top: 3rem;
+    padding-right: 1rem;
+  }
+
+  .top {
+    flex-direction: row;
+  }
+
+  .infoContainer {
+    width: 30%;
+  }
+
+  .wheelContainer {
+    width: 70%;
+  }
+
+
+}

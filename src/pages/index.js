@@ -1,0 +1,11 @@
+export { default as Competitions } from './Competitions';
+export { default as InstantWins } from './InstantWins';
+export { default as LiveGames } from './LiveGames';
+export { default as Wallet } from './Wallet';
+export { default as Referrals } from './Referrals';
+export { default as Settings } from './Settings';
+export { default as Notification } from './Notification';
+export { default as History } from './History';
+export { default as Activity } from './Activity';
+export { default as Winners } from './Winners';
+export { default as Wheel } from './Wheel';

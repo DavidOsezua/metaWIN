@@ -1,0 +1,8 @@
+.card {
+  border-radius: 0.5rem;
+  background: #3c0054;
+  width: 8.6875rem;
+  min-height: 9.9375rem;
+  flex-shrink: 0;
+  padding: 0.5rem;
+}

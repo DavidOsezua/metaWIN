@@ -1,0 +1,8 @@
+.section {
+  background: #4c0069;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1rem;
+}

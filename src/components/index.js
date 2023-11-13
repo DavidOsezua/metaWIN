@@ -1,0 +1,13 @@
+export { default as Header } from './Header';
+export { default as Sidebar1 } from './Sidebar1';
+export { default as Sidebar2 } from './Sidebar2';
+export { default as Footer } from './Footer';
+export { default as MiniGameCard } from './MiniGameCard';
+export { default as Hero } from './Hero';
+export { default as PopularGameCard } from './PopularGameCard';
+export { default as Slider } from './Slider';
+export { default as SwitchButton } from './SwitchButton';
+export { default as HeaderEmpty } from './HeaderEmpty';
+export { default as GameCard } from './GameCard';
+export { default as SpinWheel } from './SpinWheel';
+export { default as ScrollToTop } from './ScrollToTop';

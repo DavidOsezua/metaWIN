@@ -1,0 +1,35 @@
+.section {
+  background: #4c0069;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #ffffff80;
+}
+
+.headings {
+  border-radius: 0.625rem;
+  background: #3c0054;
+  display: flex;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 913px) {
+  .container {
+    padding: 0rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+.section {
+  min-height: 100vh;
+}
+.competitionsContainer > * + * {
+  margin-top: 1rem;
+}
+
+.competitionsContainer {
+  padding: 1rem;
+}
+
+.slideContainer {
+  display: flex;
+  /* justify-content: center; */
+  overflow-x: scroll;
+
+  /* margin-left: 1rem; */
+  /* margin-right: 2rem; */
+}
+
+.slide {
+  margin-left: 0.7rem;
+}
+
+
+.slideContainer::-webkit-scrollbar {
+  display: none;
+}

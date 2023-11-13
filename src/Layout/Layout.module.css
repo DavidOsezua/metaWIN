@@ -1,0 +1,25 @@
+/* CSS FILE USES THE MOBILE FIRST APPROACH */
+
+.container {
+  position: relative;
+  height: 100%;
+  background-color: #3c0054;
+}
+
+/* RESPONSIVENESS FOR DESKTOP */
+@media screen and (min-width: 769px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .check {
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .check.collapse {
+    width: 100%;
+  }
+}
