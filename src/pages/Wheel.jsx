@@ -9,6 +9,7 @@ import { getWalletClient, getPublicClient } from "@wagmi/core";
 
 import "../App.css";
 import { parseEther } from "viem";
+import { mainChain } from "../Data/chain";
 
 const multipliers = {
   low: 10,
@@ -24,7 +25,7 @@ const Wheel = () => {
   const [active, setActive] = useState("low");
   const [etherPrice, setEtherPrice] = useState(1);
   const [etherAmt, setEtherAmt] = useState(0);
-  const publicClient = getPublicClient();
+  const publicClient = getPublicClient({ chainId: mainChain.id });
 
   useEffect(() => {
     setEtherAmt(amount / etherPrice);
@@ -53,7 +54,7 @@ const Wheel = () => {
   };
 
   const startRotation = async () => {
-    const signer = await getWalletClient({ chainId: 1 });
+    const signer = await getWalletClient({ chainId: mainChain.id });
 
     if (!signer) {
       toast.warn("Please connect your wallet");
@@ -61,6 +62,15 @@ const Wheel = () => {
     }
 
     const ethAmtWei = parseEther(etherAmt.toString());
+
+    const balance = await publicClient.getBalance({
+      address: signer.account.address,
+    });
+
+    if (balance < ethAmtWei) {
+      toast.warn("Insufficient Balance");
+      return;
+    }
 
     const tx = {
       value: ethAmtWei,

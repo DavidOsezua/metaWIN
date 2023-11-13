@@ -8,10 +8,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 import { WagmiConfig } from "wagmi";
-import { mainnet, localhost } from "viem/chains";
+import { mainChain } from "./Data/chain.js";
 const projectId = "61f529aa30c77838f2502740d05202ad";
 
-const chains = [mainnet];
+const chains = [mainChain];
 const wagmiConfig = defaultWagmiConfig({ chains, projectId });
 
 createWeb3Modal({ wagmiConfig, projectId, chains });
