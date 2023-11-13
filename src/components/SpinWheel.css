@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
   height: 50vh;
-  position: relative;
+  /* position: relative; */
 }
 .container {
   position: relative;
@@ -175,10 +175,13 @@
 .arrow {
   position: absolute;
   width: 20px;
-  top: 18%;
+  top: -10%;
   right: 50%;
   transform: translateX(50%);
-  z-index: 100;
+  z-index: 10000;
+}
+
+@media screen and (min-width: 1440px) {
 }
 
 @media screen and (min-width: 1440px) {
@@ -188,6 +191,6 @@
     top: 0;
     right: 50%;
     transform: translateX(50%);
-    z-index: 100;
+    z-index: 10000;
   }
 }

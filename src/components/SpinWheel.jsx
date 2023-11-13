@@ -1,27 +1,22 @@
 import React, { useState, useRef } from 'react';
 import { arrow } from '../assets';
+import { wheelSlice } from '../Data/data';
 import './SpinWheel.css';
 
-function SpinWheel({ name, startRotation,wheelRef }) {
+function SpinWheel({ name, startRotation, wheelRef }) {
   return (
     <div className='body'>
-      <div className='arrow'>
-        <img src={arrow} />
-      </div>
-
-      <div className='container' ref={wheelRef}>
+      <div className='container'>
         <div className='circle1'></div>
 
         <div className='circle2'>
-          <div className='inner-circle'>
-            <div class='one'>L</div>
-            <div class='two'>W</div>
-            <div class='three'>L</div>
-            <div class='four'>W</div>
-            <div class='five'>L</div>
-            <div class='six'>W</div>
-            <div class='seven'>L</div>
-            <div class='eight'>W</div>
+          <div className='arrow'>
+            <img src={arrow} />
+          </div>
+          <div className='inner-circle' ref={wheelRef}>
+            {wheelSlice.map((slice) => (
+              <div className={slice.class}>{slice.result}</div>
+            ))}
           </div>
         </div>
 

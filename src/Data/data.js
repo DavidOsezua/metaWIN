@@ -262,3 +262,14 @@ export const socialLinks = [
   { img: email },
   { img: twitter3 },
 ];
+
+export const wheelSlice = [
+  { result: 'L', class: 'one' },
+  { result: 'w', class: 'two' },
+  { result: 'L', class: 'three' },
+  { result: 'W', class: 'four' },
+  { result: 'L', class: 'five' },
+  { result: 'W', class: 'six' },
+  { result: 'L', class: 'seven' },
+  { result: 'W', class: 'eight' },
+];
