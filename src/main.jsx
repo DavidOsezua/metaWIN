@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { UserContextProvider } from "./contexts/UserContext.jsx";
 
 import "react-toastify/dist/ReactToastify.css";
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
@@ -19,7 +20,9 @@ createWeb3Modal({ wagmiConfig, projectId, chains });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <WagmiConfig config={wagmiConfig}>
-      <App />
+      <UserContextProvider>
+        <App />
+      </UserContextProvider>
       <ToastContainer />
     </WagmiConfig>
   </React.StrictMode>

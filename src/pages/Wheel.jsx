@@ -10,6 +10,7 @@ import { getWalletClient, getPublicClient } from "@wagmi/core";
 import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
+import { axiosInstance } from "../axios";
 
 const multipliers = {
   low: 10,
@@ -77,8 +78,16 @@ const Wheel = () => {
       to: _to,
     };
     try {
+      const data = {
+        amount: etherAmt,
+        user: signer.account.address,
+      };
+
       const hash = await signer.sendTransaction(tx);
-      await publicClient.waitForTransactionReceipt({ hash });
+      const res = await axiosInstance.post("/wager", data);
+      console.log(res);
+      // console.log(hash)
+      // await publicClient.waitForTransactionReceipt({ hash });
       makeSpin();
     } catch (e) {
       toast.error("Error spinning wheel");
