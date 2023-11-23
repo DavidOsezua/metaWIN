@@ -1,3 +1,4 @@
+import { faker } from "@faker-js/faker";
 import {
   livewin,
   MetaWheel,
@@ -92,26 +93,31 @@ export const miniGames = [
     image: MetaWheel,
     content: "Leaderboard Price",
     amount: "$6,966",
+    path: "/wheel",
   },
   {
     image: MetaWheel,
     content: "Leaderboard Price",
     amount: "$6,966",
+    path: "/wheel",
   },
   {
     image: MetaWheel,
     content: "Leaderboard Price",
     amount: "$6,966",
+    path: "/wheel",
   },
   {
     image: MetaWheel,
     content: "Leaderboard Price",
     amount: "$6,966",
+    path: "/wheel",
   },
   {
     image: MetaWheel,
     content: "Leaderboard Price",
     amount: "$6,966",
+    path: "/wheel",
   },
 ];
 
@@ -264,12 +270,29 @@ export const socialLinks = [
 ];
 
 export const wheelSlice = [
-  { result: 'L', class: 'one' },
-  { result: 'w', class: 'two' },
-  { result: 'L', class: 'three' },
-  { result: 'W', class: 'four' },
-  { result: 'L', class: 'five' },
-  { result: 'W', class: 'six' },
-  { result: 'L', class: 'seven' },
-  { result: 'W', class: 'eight' },
+  { result: "L", class: "one" },
+  { result: "w", class: "two" },
+  { result: "L", class: "three" },
+  { result: "W", class: "four" },
+  { result: "L", class: "five" },
+  { result: "W", class: "six" },
+  { result: "L", class: "seven" },
+  { result: "W", class: "eight" },
 ];
+
+export const generateData = (onlyWinners) => {
+  const actions = ["WIN", "ENTRY", "LOSE", "UPDATE"];
+  return {
+    Title: "Time",
+    Game: "MetaWheel",
+    User: faker.internet.userName(),
+    Action: onlyWinners
+      ? "WIN"
+      : actions[Math.floor(Math.random() * actions.length)],
+    Amount: Math.random().toFixed(3),
+    image: MetaWheel,
+    UserImage: image,
+    AmountImage: eth,
+    Time: `${Math.floor(Math.random() * 30)} Sec`,
+  };
+};

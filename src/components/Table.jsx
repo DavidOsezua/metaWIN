@@ -1,12 +1,14 @@
 // import React from "react";
 import { image, MetaWheel, eth } from "../assets";
 
-import { data } from "../Data/data";
+import { generateData } from "../Data/data";
 import styles from "./Table.module.css";
 import { Fade } from "react-awesome-reveal";
 const HEADERS = ["Game", "User", "Action", "Amount", "Time"];
 
 const Table = () => {
+  const dat = [1, 2, 3, 4, 5, 6].map(() => generateData(true));
+
   return (
     <Fade>
       <div className="table-responsive ">
@@ -21,7 +23,7 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((item, index) => (
+            {dat.map((item, index) => (
               <tr
                 key={item.id}
                 className={(index + 1) % 2 === 0 ? "bg-[#5D0074]" : ""}
@@ -51,7 +53,7 @@ const Table = () => {
                       : "text-[#56FF47]"
                   }`}
                 >
-                  ENTRY
+                  {item.Action}
                 </td>
 
                 <td className={`${styles.tdStyle}`}>
