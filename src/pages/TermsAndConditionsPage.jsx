@@ -519,133 +519,160 @@ const TermsAndConditionsPage = () => {
             used to entry again using a different wallet.
           </p>
           <p>5.1. Mail-in Membership option (Mail-In Members)</p>
+          <p>
+            5.1.0. Alternative means of accessing Membership Facilities -
+            Offline, no purchase-necessary, method of entry: As an alternate
+            means of accessing Member Facilities, you must:
+          </p>
+          <p>
+            5.1.0.1. send a Mail-In Registration to upgrade to access Membership
+            Facilities as a Mail-In Member.
+          </p>
+          <p>
+            5.1.0.1. send a Mail-In Registration to upgrade to access Membership
+            Facilities as a Mail-In Member.
+          </p>
+          <p>
+            5.1.1. For each single free entry, you must be currently registered,
+            and then complete the following steps: 5.1.0.1. send a Mail-In
+            Registration to upgrade to access Membership Facilities as a Mail-In
+            Member.
+          </p>
+          <p>
+            5.1.1.1. Make note of the 16 digit unique code presented on this
+            page
+          </p>
+          <p>
+            5.1.1.2. send a 3-inch x 5-inch card on which you have legibly
+            handwritten the following details: 16-digit unique access code,
+            Username, First and Last Name, complete Mailing Address (e.g.
+            Street, City, State, ZIP code), Email Address, Date of Birth,
+            today's date, Competition ID, and wallet address associated with
+            your account (each, a "Mail-In Registration").
+          </p>
+          <p>
+            5.1.1.3. Each Mail-In Registration must be placed in a single
+            separate envelope, and mailed to: MetaWin Inc, 539 W. Commerce St
+            #2210, Dallas TX, 75208, USA .
+          </p>
+          <p>
+            5.1.1.4. Each Mail-In Registration must be received and processed by
+            us within 14 days of the 16-digit code being generated.
+          </p>
+          <p>5.1.2. Please note:</p>
+          <p>
+            5.1.2.0. 16-digit codes are unique and can only be used by the
+            registered Basic Member
+          </p>
+          <p>5.1.2.1. A new 16-digit code is generated every 24 hours</p>
+          <p>
+            5.1.2.2. Multiple Mail-In Registrations in a single envelope are not
+            acceptable.
+          </p>
+          <p>
+            5.1.2.3. If multiple Mail-In Registrations are sent in a single
+            envelope, only one Mail-In Registration will be processed. 5.1.2.2.
+            Multiple Mail-In Registrations in a single envelope are not
+            acceptable.
+          </p>
+          <p>5.1.2.4. No metered mail will be accepted.</p>
+          <p>
+            5.1.2.5. No photocopies, reproductions or facsimiles of the 3-inch x
+            5-inch card are allowed.
+          </p>
+          <p>
+            5.1.2.6. You may not use, or provide a service to other Members, to
+            provide the production of the 3-inch x 5-inch card.
+          </p>
+          <p>
+            5.1.3. Users can obtain one entry per competition by completing the
+            mail in registration process. The entry will be added to the draw in
+            the final hour before the competition completes.
+          </p>
+          <p>
+            5.1.4. We shall not be responsible for late, lost, illegible,
+            incomplete, stolen, misdirected, mutilated or postage-due mail. The
+            odds of winning any Prize will be the same for Mail-In Members as
+            for Paying Members. All Mail-In Members will be accorded equal
+            opportunities to participate and win in Games held on the Platform.
+          </p>
+        </div>
+
+        <div className='policyContainer'>
+          <h3 className='title'>6. Swapping ETH into your MetaWin balance</h3>
+          <p>
+            6.0. You can participate in any or MetaWin’s instant games if you
+            have sufficient ETH in your MetaWin balance. MetaWin will not give
+            you any credit whatsoever for participation in any of its instant
+            games.
+          </p>
+          <p>
+            6.1. Swapping ETH into your MetaWin balance may be restricted in
+            certain territories. If you do not see the option to swap, then you
+            are within a territory in which they are not accepted.
+          </p>
+          <p>
+            6.2. To swap funds into your MetaWin wallet, you transfer funds from
+            crypto-wallets using the swap option within your MetaWin wallet.
+            Swaps can only be made with the wallet connected to your MetaWin
+            account.
+          </p>
+          <p>
+            6.3. Swaps into your MetaWin balance are shown in your MetaWin
+            wallet instantly. MetaWin does not take responsibility for any
+            delays caused due to Ethereum network confirmation times or due to
+            delays caused by any third party.
+          </p>
+          <p>
+            6.4. We reserve the right to use additional procedures and means to
+            verify your swaps.
+          </p>
+          <p>
+            6.5. Note that gas fees are applied to a swap into your MetaWin
+            balance, as displayed by your crypto wallet on confirmation.
+          </p>
+          <p>
+            6.7. MetaWin can refuse any swaps at its own discretion. Users that
+            have their accounts blocked, or suspended shall refrain from
+            swapping. In the event that a user attempts to swap when their
+            MetaWin account is closed or suspended, MetaWin has the right to
+            retain the funds.
+          </p>
+        </div>
+
+        <div className='policyContainer'>
+          <p>7. Swapping ETH out of your MetaWin balance</p>
+          <p>
+            7.0. Swaps out of your MetaWin balance will be made to the crypto
+            wallet you have associated with your MetaWin account.
+          </p>
+          <p>
+            7.1. MetaWin reserves the right to carry out additional verification
+            procedures for any outbound swap.
+          </p>
+          <p>
+            7.2. MetaWin users who wish to recover funds held in closed or
+            suspended accounts, must send an email to support@metawin.com with
+            their request.
+          </p>
+          <p>
+            7.3. MetaWin may suspend, or close a users MetaWin account and
+            withhold funds at any point.
+          </p>
+          <p>
+            7.4. You acknowledge that the balance in your MetaWin wallet is used
+            instantly when interacting with our instant games and we do not
+            provide return of goods, refunds.
+          </p>
+          <p>
+            7.5. Note that withdrawals include an additional 0.005 ETH fee to
+            cover transactional gas.
+          </p>
+          <p>
+            7.6. Swaps out carry a maximum limit of 5 ETH per 24 hours period.
+          </p>
         </div>
         {/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5.1.0. Alternative means of accessing Membership Facilities - Offline, no purchase-necessary, method of entry: As an alternate means of accessing Member Facilities, you must:
-
-5.1.0.0. register as a Basic Member, for free; and
-
-5.1.0.1. send a Mail-In Registration to upgrade to access Membership Facilities as a Mail-In Member.
-
-5.1.1. For each single free entry, you must be currently registered, and then complete the following steps:
-
-5.1.1.0. Log into the Platform and locate the Mail-in Registration page which can be found here.
-
-5.1.1.1. Make note of the 16 digit unique code presented on this page
-
-5.1.1.2. send a 3-inch x 5-inch card on which you have legibly handwritten the following details: 16-digit unique access code, Username, First and Last Name, complete Mailing Address (e.g. Street, City, State, ZIP code), Email Address, Date of Birth, today's date, Competition ID, and wallet address associated with your account (each, a "Mail-In Registration").
-
-5.1.1.3. Each Mail-In Registration must be placed in a single separate envelope, and mailed to: MetaWin Inc, 539 W. Commerce St #2210, Dallas TX, 75208, USA .
-
-5.1.1.4. Each Mail-In Registration must be received and processed by us within 14 days of the 16-digit code being generated.
-
-5.1.2. Please note:
-
-5.1.2.0. 16-digit codes are unique and can only be used by the registered Basic Member
-
-5.1.2.1. A new 16-digit code is generated every 24 hours
-
-5.1.2.2. Multiple Mail-In Registrations in a single envelope are not acceptable.
-
-5.1.2.3. If multiple Mail-In Registrations are sent in a single envelope, only one Mail-In Registration will be processed.
-
-5.1.2.4. No metered mail will be accepted.
-
-5.1.2.5. No photocopies, reproductions or facsimiles of the 3-inch x 5-inch card are allowed.
-
-5.1.2.6. You may not use, or provide a service to other Members, to provide the production of the 3-inch x 5-inch card.
-
-5.1.3. Users can obtain one entry per competition by completing the mail in registration process. The entry will be added to the draw in the final hour before the competition completes.
-
-5.1.4. We shall not be responsible for late, lost, illegible, incomplete, stolen, misdirected, mutilated or postage-due mail. The odds of winning any Prize will be the same for Mail-In Members as for Paying Members. All Mail-In Members will be accorded equal opportunities to participate and win in Games held on the Platform.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
-
-
-
-
-
-
-
-
-
 
 
 
@@ -698,39 +725,9 @@ export default TermsAndConditionsPage;
 
 
 
-6. Swapping ETH into your MetaWin balance
 
-6.0. You can participate in any or MetaWin’s instant games if you have sufficient ETH in your MetaWin balance. MetaWin will not give you any credit whatsoever for participation in any of its instant games.
 
-6.1. Swapping ETH into your MetaWin balance may be restricted in certain territories. If you do not see the option to swap, then you are within a territory in which they are not accepted.
 
-6.2. To swap funds into your MetaWin wallet, you transfer funds from crypto-wallets using the swap option within your MetaWin wallet. Swaps can only be made with the wallet connected to your MetaWin account.
-
-6.3. Swaps into your MetaWin balance are shown in your MetaWin wallet instantly. MetaWin does not take responsibility for any delays caused due to Ethereum network confirmation times or due to delays caused by any third party.
-
-6.4. We reserve the right to use additional procedures and means to verify your swaps.
-
-6.5. Note that gas fees are applied to a swap into your MetaWin balance, as displayed by your crypto wallet on confirmation.
-
-6.6. Your MetaWin balance cannot be transferred from your MetaWin wallet to the MetaWin wallet of another user.
-
-6.7. MetaWin can refuse any swaps at its own discretion. Users that have their accounts blocked, or suspended shall refrain from swapping. In the event that a user attempts to swap when their MetaWin account is closed or suspended, MetaWin has the right to retain the funds.
-
-7. Swapping ETH out of your MetaWin balance
-
-7.0. Swaps out of your MetaWin balance will be made to the crypto wallet you have associated with your MetaWin account.
-
-7.1. MetaWin reserves the right to carry out additional verification procedures for any outbound swap.
-
-7.2. MetaWin users who wish to recover funds held in closed or suspended accounts, must send an email to support@metawin.com with their request.
-
-7.3. MetaWin may suspend, or close a users MetaWin account and withhold funds at any point.
-
-7.4. You acknowledge that the balance in your MetaWin wallet is used instantly when interacting with our instant games and we do not provide return of goods, refunds.
-
-7.5. Note that withdrawals include an additional 0.005 ETH fee to cover transactional gas.
-
-7.6. Swaps out carry a maximum limit of 5 ETH per 24 hours period.
 
 8. PROMOTIONS
 
