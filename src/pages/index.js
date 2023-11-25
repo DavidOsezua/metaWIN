@@ -12,3 +12,7 @@ export { default as Wheel } from './Wheel';
 export { default as PolicyPage } from './PolicyPage';
 export { default as TermsAndConditionsPage } from './TermsAndConditionsPage';
 export { default as CokkiePolicyPage } from './CokkiePolicyPage';
+export { default as Selfexclusion } from './Selfexclusion';
+export { default as ResponsibleGambling } from './ResponsibleGambling';
+export { default as KYCPolicy } from './KYCPolicy';
+export { default as UnderageGamingPolicy } from './UnderageGamingPolicy';

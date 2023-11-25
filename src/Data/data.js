@@ -87,8 +87,12 @@ export const aboutUs = [
   { link: 'Cookie Policy', path: '/cookiePolicy' },
   { link: 'Terms and Conditions', path: '/termsandconditions' },
 ];
-
-export const gaming = [];
+export const gaming = [
+  { link: '  Underage Gaming Policy', path: '/underagegamblingpolicy' },
+  { link: '  Self -Exclusion Policy', path: '/selexclusion' },
+  { link: '  Responsible Gambling', path: '/responsiblegambling' },
+  { link: 'KYC Policy', path: '/kycpolicy' },
+];
 
 /* **************** VARIABLE FOR MINI GAME CARD IN THE COMPETITION PAGE ******************** */
 export const miniGames = [

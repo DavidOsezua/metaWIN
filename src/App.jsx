@@ -14,6 +14,10 @@ import {
   Winners,
   Wheel,
   LiveGames,
+  UnderageGamingPolicy,
+  KYCPolicy,
+  Selfexclusion,
+  ResponsibleGambling,
 } from './pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Footer, ScrollToTop } from './components';
@@ -43,6 +47,16 @@ const App = () => {
               element={<TermsAndConditionsPage />}
             />
             <Route path='/policy' element={<PolicyPage />} />
+            <Route
+              path='/responsiblegambling'
+              element={<ResponsibleGambling />}
+            />
+            <Route
+              path='/underagegamblingpolicy'
+              element={<UnderageGamingPolicy />}
+            />
+            <Route path='/kycpolicy' element={<KYCPolicy />} />
+            <Route path='/selexclusion' element={<Selfexclusion />} />
           </Routes>
           <Footer />
         </Layout>
