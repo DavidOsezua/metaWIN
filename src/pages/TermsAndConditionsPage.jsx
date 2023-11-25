@@ -263,7 +263,7 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContentContainer'>
+        <div className='policyContainer'>
           <h3 className='title'>4. YOUR CUSTOMER ACCOUNT</h3>
           <p>
             4.0. Our system allows for customer account per wallet address,
@@ -641,7 +641,7 @@ const TermsAndConditionsPage = () => {
         </div>
 
         <div className='policyContainer'>
-          <p>7. Swapping ETH out of your MetaWin balance</p>
+          <h3 className='title'>7. Swapping ETH out of your MetaWin balance</h3>
           <p>
             7.0. Swaps out of your MetaWin balance will be made to the crypto
             wallet you have associated with your MetaWin account.
