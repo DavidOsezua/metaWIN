@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { NavLink } from 'react-router-dom';
+import { aboutUs } from '../Data/data';
 import { logo } from '../assets';
 import { socialLinks } from '../Data/data';
 
@@ -17,9 +19,11 @@ const Footer = () => {
           <h3 className='font-bold mb-[0.6rem]'>About Us</h3>
 
           <ul>
-            <li className='text-[0.825rem] mb-[1rem]'>Privacy Policy</li>
-            <li className='text-[0.825rem] mb-[1rem]'>Cookie Policy</li>
-            <li className='text-[0.825rem] mb-[1rem]'>Terms and Conditions</li>
+            {aboutUs.map((about) => (
+              <li className='text-[0.825rem] mb-[1rem]'>
+                <NavLink to={about.path}>{about.link}</NavLink>
+              </li>
+            ))}
           </ul>
         </div>
 

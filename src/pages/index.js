@@ -9,3 +9,6 @@ export { default as History } from './History';
 export { default as Activity } from './Activity';
 export { default as Winners } from './Winners';
 export { default as Wheel } from './Wheel';
+export { default as PolicyPage } from './PolicyPage';
+export { default as TermsAndConditionsPage } from './TermsAndConditionsPage';
+export { default as CokkiePolicyPage } from './CokkiePolicyPage';
