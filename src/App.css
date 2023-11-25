@@ -10,7 +10,7 @@
   padding: 1rem;
 }
 
-.policyContentContainer > * +*{
+.policyContentContainer > * + * {
   margin-top: 1rem;
 }
 .title {
@@ -19,9 +19,11 @@
   color: #fff;
 }
 
+.policyContainer {
+  color: #fff;
+}
 .policyContainer > * + * {
   margin-top: 1rem;
-  color: #fff;
 }
 
 @keyframes transitionIn {
