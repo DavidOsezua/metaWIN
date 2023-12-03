@@ -42,4 +42,6 @@ const App = () => {
   );
 };
 
+// Just for testing purposes
+
 export default App;
