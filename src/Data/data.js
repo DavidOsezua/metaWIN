@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import { faker } from '@faker-js/faker';
 import {
   livewin,
   MetaWheel,
@@ -10,245 +10,258 @@ import {
   instagram,
   email,
   twitter3,
-} from "../assets"; //These imports are coming from the index.js file in the assests folder.
+} from '../assets'; //These imports are coming from the index.js file in the assests folder.
 
 /* **************** VARIABLE FOR LIVE WIN CARD IN THE COMPETITON AND LIVE WIN PAGE ******************** */
 export const liveWins = [
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
   {
     image: livewin,
-    content: "Ox1xccccc",
-    amount: "$6,966",
+    content: 'Ox1xccccc',
+    amount: '$6,966',
   },
+];
+
+/* **************** VARIABLE FOR FOOTERLINKS ******************** */
+export const aboutUs = [
+  { link: 'Privacy Policy', path: '/policy' },
+  { link: 'Cookie Policy', path: '/cookiePolicy' },
+  { link: 'Terms and Conditions', path: '/termsandconditions' },
+];
+export const gaming = [
+  { link: '  Underage Gaming Policy', path: '/underagegamblingpolicy' },
+  { link: '  Self -Exclusion Policy', path: '/selexclusion' },
+  { link: '  Responsible Gambling', path: '/responsiblegambling' },
+  { link: 'KYC Policy', path: '/kycpolicy' },
 ];
 
 /* **************** VARIABLE FOR MINI GAME CARD IN THE COMPETITION PAGE ******************** */
 export const miniGames = [
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
   {
     image: MetaWheel,
-    content: "Leaderboard Price",
-    amount: "$6,966",
-    path: "/wheel",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
+    path: '/wheel',
   },
 ];
 
 /* **************** VARIABLE FOR STAT CARD IN THE REFERRAL PAGE ******************** */
 export const statsDays = [
-  { day: "Today" },
-  { day: "Yesterday" },
-  { day: "This Month" },
-  { day: "Last month" },
+  { day: 'Today' },
+  { day: 'Yesterday' },
+  { day: 'This Month' },
+  { day: 'Last month' },
 ];
 
 /* **************** VARIABLE FOR POPULAR GAME CARD IN THE LIVE WIN PAGE ******************** */
 export const popularGames = [
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
   {
     image: mammoth,
-    content: "Leaderboard Price",
-    amount: "$6,966",
+    content: 'Leaderboard Price',
+    amount: '$6,966',
   },
 ];
 
 /* **************** DATA FOR THE TABLE ******************** */
 export const data = [
   {
-    Title: "Game",
-    Game: "MetaWheel",
-    User: "Codicat",
-    Action: "ENTRY",
+    Title: 'Game',
+    Game: 'MetaWheel',
+    User: 'Codicat',
+    Action: 'ENTRY',
     Amount: 0.018,
     image: MetaWheel,
     UserImage: image,
     AmountImage: eth,
-    Time: "4 Sec",
+    Time: '4 Sec',
   },
   {
-    Title: "User",
-    Game: "MetaWheel",
-    User: "Codicat",
-    Action: "ENTRY",
+    Title: 'User',
+    Game: 'MetaWheel',
+    User: 'Codicat',
+    Action: 'ENTRY',
     Amount: 0.018,
     image: MetaWheel,
     UserImage: image,
     AmountImage: eth,
-    Time: "4 Sec",
+    Time: '4 Sec',
   },
   {
-    Title: "Action",
-    Game: "MetaWheel",
-    User: "Codicat",
-    Action: "ENTRY",
+    Title: 'Action',
+    Game: 'MetaWheel',
+    User: 'Codicat',
+    Action: 'ENTRY',
     Amount: 0.018,
     image: MetaWheel,
     UserImage: image,
     AmountImage: eth,
-    Time: "4 Sec",
+    Time: '4 Sec',
   },
   {
-    Title: "Amount",
-    Game: "MetaWheel",
-    User: "Codicat",
-    Action: "ENTRY",
+    Title: 'Amount',
+    Game: 'MetaWheel',
+    User: 'Codicat',
+    Action: 'ENTRY',
     Amount: 0.018,
     image: MetaWheel,
     UserImage: image,
     AmountImage: eth,
-    Time: "4 Sec",
+    Time: '4 Sec',
   },
   {
-    Title: "Time",
-    Game: "MetaWheel",
-    User: "Codicat",
-    Action: "WIN",
+    Title: 'Time',
+    Game: 'MetaWheel',
+    User: 'Codicat',
+    Action: 'WIN',
     Amount: 0.018,
     image: MetaWheel,
     UserImage: image,
     AmountImage: eth,
-    Time: "4 Sec",
+    Time: '4 Sec',
   },
 ];
 
@@ -259,7 +272,7 @@ export const ethAmt = [50, 100, 200];
 export const potentialWins = [10000, 50000, 100000];
 
 /* **************** VARIABLE FOR NUMBER OF SPINS IN THE SPIN WHEEL PAGE ******************** */
-export const numberOfSpins = ["low", "medium", "high"];
+export const numberOfSpins = ['low', 'medium', 'high'];
 
 export const socialLinks = [
   { img: linkdin },
@@ -270,24 +283,24 @@ export const socialLinks = [
 ];
 
 export const wheelSlice = [
-  { result: "L", class: "one" },
-  { result: "w", class: "two" },
-  { result: "L", class: "three" },
-  { result: "W", class: "four" },
-  { result: "L", class: "five" },
-  { result: "W", class: "six" },
-  { result: "L", class: "seven" },
-  { result: "W", class: "eight" },
+  { result: 'L', class: 'one' },
+  { result: 'w', class: 'two' },
+  { result: 'L', class: 'three' },
+  { result: 'W', class: 'four' },
+  { result: 'L', class: 'five' },
+  { result: 'W', class: 'six' },
+  { result: 'L', class: 'seven' },
+  { result: 'W', class: 'eight' },
 ];
 
 export const generateData = (onlyWinners) => {
-  const actions = ["WIN", "ENTRY", "LOSE", "UPDATE"];
+  const actions = ['WIN', 'ENTRY', 'LOSE', 'UPDATE'];
   return {
-    Title: "Time",
-    Game: "MetaWheel",
+    Title: 'Time',
+    Game: 'MetaWheel',
     User: faker.internet.userName(),
     Action: onlyWinners
-      ? "WIN"
+      ? 'WIN'
       : actions[Math.floor(Math.random() * actions.length)],
     Amount: Math.random().toFixed(3),
     image: MetaWheel,

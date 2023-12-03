@@ -1,5 +1,29 @@
+.section {
+  min-height: 100vh;
+}
+
 .transition {
   animation: transitionIn 1.5s;
+}
+
+.policyContentContainer {
+  padding: 1rem;
+}
+
+.policyContentContainer > * + * {
+  margin-top: 1rem;
+}
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.policyContainer {
+  color: #fff;
+}
+.policyContainer > * + * {
+  margin-top: 1rem;
 }
 
 @keyframes transitionIn {
