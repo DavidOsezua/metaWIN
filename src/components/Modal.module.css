@@ -1,0 +1,32 @@
+.overlay {
+  background: rgba(39, 0, 51, 0.85);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transition: 0.3s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.modalContent {
+  border-radius: 0.75rem;
+  background: #3c0054;
+  width: 16.1875rem;
+padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.modalContent > * +* {
+  margin-top: 1rem;
+}

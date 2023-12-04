@@ -37,7 +37,6 @@
   align-items: center;
   justify-content: center;
   height: 50vh;
-  /* position: relative; */
 }
 .container {
   position: relative;
@@ -172,15 +171,17 @@
   transform: rotate(315deg);
 }
 
-.arrow {
+/* .arrow {
   position: absolute;
   width: 20px;
-  top: -10%;
+
   right: 50%;
   transform: translateX(50%);
-  z-index: 10000;
+  z-index: 100
+} */
+.image {
+  width: 50%;
 }
-
 @media screen and (min-width: 1440px) {
 }
 
@@ -191,6 +192,6 @@
     top: 0;
     right: 50%;
     transform: translateX(50%);
-    z-index: 10000;
+    /* z-index: 10000; */
   }
 }

@@ -1,15 +1,13 @@
-import { arrow } from "../assets";
-import "./SpinWheel.css";
-import { toast } from "react-toastify";
+import { arrow, arrow2, colorColorWheel } from '../assets';
+import './SpinWheel.css';
+import { toast } from 'react-toastify';
 
 function SpinWheel({ wheelRef }) {
   return (
-    <div className="body">
-      <div className="arrow">
-        <img src={arrow} />
-      </div>
+    <div className='body  h-[70%]'>
+      <img src={colorColorWheel} ref={wheelRef} className='image' />
 
-      <div
+      {/* <div
         className="container"
         ref={wheelRef}
         onTransitionEnd={() => {
@@ -34,7 +32,7 @@ function SpinWheel({ wheelRef }) {
         </div>
 
         <div className="circle3"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
