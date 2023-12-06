@@ -1,11 +1,22 @@
-import { arrow, arrow2, colorColorWheel } from '../assets';
-import './SpinWheel.css';
-import { toast } from 'react-toastify';
+import { parseEther } from "viem";
+import { arrow, arrow2, colorColorWheel } from "../assets";
+import "./SpinWheel.css";
+import { toast } from "react-toastify";
+import { sendTransaction } from "@wagmi/core";
 
 function SpinWheel({ wheelRef }) {
   return (
-    <div className='body  h-[70%]'>
-      <img src={colorColorWheel} ref={wheelRef} className='image' />
+    <div className="body  h-[70%]">
+      <img
+        src={colorColorWheel}
+        ref={wheelRef}
+        className="image"
+        onTransitionEnd={async () => {
+          wheelRef.current.style.transition = "";
+          wheelRef.current.style.transform = "";
+          toast.error("You lose");
+        }}
+      />
 
       {/* <div
         className="container"
