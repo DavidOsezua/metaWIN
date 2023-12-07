@@ -24,8 +24,8 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
       } `}
       onClick={toggleHandler}
     >
-      <div className='bg-[#70008c] rounded-[8px] p-[0]'>
-        <li className={`bg-[#70008c] ${styles.navItem} `}>
+      <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
+        <li className={` ${styles.navItem} `}>
           <NavLink to='/competitions'>
             <img src={competitions} className={`${styles.navItemImage} `} />
           </NavLink>
@@ -71,7 +71,7 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
       </div>
 
-      <div className='bg-[#70008c] rounded-[8px]'>
+      <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
         <li className={`bg-[#70008c] ${styles.navItem}`}>
           <NavLink to='/winners'>
             <img src={winners} className={`${styles.navItemImage}`} />
@@ -103,7 +103,7 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
       </div>
 
-      <div className={`bg-[#70008c] rounded-[8px] ${styles.navItemContainer}`}>
+      <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
         <li className={`bg-[#70008c] ${styles.navItem}`}>
           <NavLink to='/notifications'>
             <img src={notification} className={`${styles.navItemImage}`} />
@@ -180,27 +180,31 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
       </div>
 
-      <li className={`bg-[#70008c] ${styles.navItem}`}>
-        <img src={discord} className={`${styles.navItemImage}`} />
-        <p
-          className={`${styles.navItemText} ${
-            collapseSidebar && styles.textRemove
-          }`}
-        >
-          Join the Arena
-        </p>
-      </li>
+      <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
+        <li className={`bg-[#70008c]  ${styles.navItem}`}>
+          <img src={discord} className={`${styles.navItemImage}`} />
+          <p
+            className={`${styles.navItemText} ${
+              collapseSidebar && styles.textRemove
+            }`}
+          >
+            Join the Arena
+          </p>
+        </li>
+      </div>
 
-      <li className={`bg-[#70008c] ${styles.navItem}`}>
-        <img src={twitter} className={`${styles.navItemImage}`} />
-        <p
-          className={`${styles.navItemText} ${
-            collapseSidebar && styles.textRemove
-          }`}
-        >
-          Twitter
-        </p>
-      </li>
+      <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
+        <li className={`bg-[#70008c] ${styles.navItem}`}>
+          <img src={twitter} className={`${styles.navItemImage}`} />
+          <p
+            className={`${styles.navItemText} ${
+              collapseSidebar && styles.textRemove
+            }`}
+          >
+            Twitter
+          </p>
+        </li>
+      </div>
     </ul>
   );
 };

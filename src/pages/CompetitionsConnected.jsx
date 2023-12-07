@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
-import styles from './Competitions.module.css';
-import { liveWins, miniGames } from '../Data/data';
+import React, { useContext, useEffect, useState } from 'react';
+import styles from './CompetitionsConnected.module.css';
+import { liveWins2, miniGames } from '../Data/data';
 import Modal from '../components/Modal';
 
 import {
@@ -19,31 +19,11 @@ import '../App.css';
 
 //LivewinGameCards Component
 export const LiveWinCards = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const handle = setInterval(() => {
-      const newIndex = (currentIndex + 1) % liveWins.length;
-      setCurrentIndex(newIndex);
-    }, 2000);
-
-    return () => clearInterval(handle);
-  }, [currentIndex, liveWins.length]);
-
-  useEffect(() => {
-    // Scroll to the selected slide
-    if (sliderRef.current) {
-      sliderRef.current.scrollLeft =
-        currentIndex * sliderRef.current.offsetWidth;
-    }
-  }, [currentIndex]);
-
   return (
     <div className=' '>
       <p className='text-[#fff] pb-[1rem] pl-[1rem] pt-[1rem]'>Live wins</p>
-      <div className={`${styles.slideContainer}`} ref={sliderRef}>
-        {liveWins.map((liveWin, index) => (
+      <div className={`${styles.slideContainer}`}>
+        {liveWins2.map((liveWin, index) => (
           <div className={`${styles.slide}`} key={index}>
             <GameCardItem liveWin={liveWin} />
           </div>
@@ -69,7 +49,7 @@ export const GameCardItem = ({ liveWin }) => {
 };
 
 //Competition Component
-const Competitions = () => {
+const CompetitionsConnected = () => {
   const [modal, setModal] = useState(false);
   const modalHandler = () => {
     setModal(!modal);
@@ -120,4 +100,4 @@ const Competitions = () => {
   );
 };
 
-export default Competitions;
+export default CompetitionsConnected;

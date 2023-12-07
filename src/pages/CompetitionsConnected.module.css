@@ -13,7 +13,6 @@
   display: flex;
   /* justify-content: center; */
   overflow-x: scroll;
-  scroll-behavior: smooth;
 
   /* margin-left: 1rem; */
   /* margin-right: 2rem; */
@@ -22,7 +21,6 @@
 .slide {
   margin-left: 0.7rem;
 }
-
 
 .slideContainer::-webkit-scrollbar {
   display: none;

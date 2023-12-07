@@ -39,6 +39,11 @@ import modalSpin from './modalSpin.svg';
 import metaWheelBanner from './metaWheelBanner.svg';
 import tempBtn from './tempBtn.svg';
 import modalClose from './modalClose.svg';
+import pic1 from './pic1.svg';
+import pic2 from './pic2.svg';
+import pic3 from './pic3.svg';
+import pic4 from './pic4.svg';
+import pic5 from './pic5.svg';
 
 export {
   competitions,
@@ -82,4 +87,9 @@ export {
   metaWheelBanner,
   tempBtn,
   modalClose,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
 };

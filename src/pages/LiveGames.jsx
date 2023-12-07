@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LiveGames.module.css';
 import { LiveWinCards } from './Competitions';
-import { liveWins, miniGames, popularGames } from '../Data/data';
+import { popularGames } from '../Data/data';
 
 import {
   Hero,

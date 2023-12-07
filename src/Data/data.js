@@ -1,5 +1,10 @@
 import { faker } from '@faker-js/faker';
 import {
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
   livewin,
   MetaWheel,
   mammoth,
@@ -13,69 +18,226 @@ import {
 } from '../assets'; //These imports are coming from the index.js file in the assests folder.
 
 /* **************** VARIABLE FOR LIVE WIN CARD IN THE COMPETITON AND LIVE WIN PAGE ******************** */
+export const liveWins2 = [
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: livewin,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+];
 export const liveWins = [
   {
-    image: livewin,
+    image: pic1,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic3,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic2,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic4,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic5,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic2,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic4,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic5,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic3,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic1,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic4,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic2,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
   {
-    image: livewin,
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic3,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic1,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic4,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic2,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic3,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic1,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic4,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic2,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic3,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic1,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic4,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic2,
+    content: 'Ox1xccccc',
+    amount: '$6,966',
+  },
+  {
+    image: pic5,
     content: 'Ox1xccccc',
     amount: '$6,966',
   },
