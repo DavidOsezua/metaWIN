@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import styles from './Competitions.module.css';
 import { liveWins, miniGames } from '../Data/data';
+import Modal from '../components/Modal';
 
 import {
   Hero,
@@ -9,7 +10,6 @@ import {
   HeaderEmpty,
   MiniGameCard,
 } from '../components'; // These imports are coming from the index.js file in the component folder. This method minimizes the number of import used in a particular component
-import Modal from '../components/Modal';
 import Table from '../components/Table';
 import { NavLink } from 'react-router-dom';
 import { Zoom, Fade } from 'react-awesome-reveal';
@@ -18,7 +18,10 @@ import '../App.css';
 /* This Competitions Component renders the Competiton page on the website. It has two component in it which are the Livewin-Gamecard item and the Livewin-GameCards .  */
 
 //Livewin-Gamecard item Component
+
+
 export const GameCardItem = ({ liveWin }) => {
+ 
   return (
     <Zoom>
       <GameCard>
@@ -50,10 +53,18 @@ export const LiveWinCards = () => {
 
 //Competition Component
 const Competitions = () => {
+   const [modal, setModal] = useState(false);
+   const modalHandler = () => {
+     setModal(!modal);
+   };
+
+   useEffect(() => {
+     setModal(true);
+   }, []);
 
   return (
     <section className={`bg-[#70008C] ${styles.section} transition`}>
-      
+      {modal && <Modal modalHandler={modalHandler} />}
       <HeaderEmpty />
 
       <LiveWinCards />

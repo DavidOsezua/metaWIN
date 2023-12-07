@@ -6,6 +6,7 @@ import {
   modalSpin,
   modalClose,
 } from '../assets';
+import { NavLink } from 'react-router-dom';
 import { Zoom } from 'react-awesome-reveal';
 import styles from './Modal.module.css';
 
@@ -28,7 +29,15 @@ const Modal = ({ modalHandler }) => {
             <img src={metaWheelBanner} className='w-[73%]' />
           </div>
           <img src={object} />
-          <button></button>
+          <div className='flex justify-center'>
+            <NavLink to='/wheel'>
+              {' '}
+              <button className='text-[0.8rem] bg-[#FF6665] text-[#fff] p-[0.5rem] rounded-md '>
+                Spin Now
+              </button>
+            </NavLink>
+          </div>
+
           <img src={tempBtn} />
         </div>
       </Zoom>
@@ -37,24 +46,3 @@ const Modal = ({ modalHandler }) => {
 };
 
 export default Modal;
-
-// const App = () => {
-//   const [modalVisible, setModalVisible] = useState(false);
-
-//   // useEffect to show the modal when the component mounts
-//   useEffect(() => {
-//     setModalVisible(true);
-//   }, []); // The empty dependency array ensures that the effect runs only once
-
-//   return (
-//     <div className="app">
-//       {modalVisible && <Modal />}
-//       <div className="content">
-//         {/* The rest of your app content */}
-//         <p>Main content goes here.</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default App;
