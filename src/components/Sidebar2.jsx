@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   competitions,
   winners,
@@ -12,11 +12,13 @@ import {
   history,
   referral,
   setting,
-} from '../assets';
-import { NavLink } from 'react-router-dom';
-import styles from './Sidebar2.module.css';
+} from "../assets";
+import { NavLink } from "react-router-dom";
+import styles from "./Sidebar2.module.css";
+import { useAccount } from "wagmi";
 
 const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
+  const { isConnected } = useAccount();
   return (
     <ul
       className={`${styles.navMenu} ${toggle && styles.showMenu} ${
@@ -26,12 +28,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
     >
       <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
         <li className={` ${styles.navItem} `}>
-          <NavLink to='/competitions'>
+          <NavLink to="/competitions">
             <img src={competitions} className={`${styles.navItemImage} `} />
           </NavLink>
 
           <NavLink
-            to='/competitions'
+            to="/competitions"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             } `}
@@ -39,46 +41,49 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
             Competitions
           </NavLink>
         </li>
+        {isConnected && (
+          <>
+            <li className={`bg-[#70008c] ${styles.navItem} `}>
+              <NavLink to="/instantwins">
+                <img src={dice} className={`${styles.navItemImage}`} />
+              </NavLink>
 
-        <li className={`bg-[#70008c] ${styles.navItem} `}>
-          <NavLink to='/instantwins'>
-            <img src={dice} className={`${styles.navItemImage}`} />
-          </NavLink>
+              <NavLink
+                to="/instantwins"
+                className={`${styles.navItemText} ${
+                  collapseSidebar && styles.textRemove
+                } text-[#FF6665] `}
+              >
+                Instant Win
+              </NavLink>
+            </li>
 
-          <NavLink
-            to='/instantwins'
-            className={`${styles.navItemText} ${
-              collapseSidebar && styles.textRemove
-            } text-[#FF6665] `}
-          >
-            Instant Win
-          </NavLink>
-        </li>
+            <li className={`bg-[#70008c] ${styles.navItem} `}>
+              <NavLink to="/livegames">
+                <img src={liveGames} className={`${styles.navItemImage}`} />
+              </NavLink>
 
-        <li className={`bg-[#70008c] ${styles.navItem} `}>
-          <NavLink to='/livegames'>
-            <img src={liveGames} className={`${styles.navItemImage}`} />
-          </NavLink>
-
-          <NavLink
-            to='/livegames'
-            className={`${styles.navItemText} ${
-              collapseSidebar && styles.textRemove
-            }  text-[#FFC72E]`}
-          >
-            Live Games
-          </NavLink>
-        </li>
+              <NavLink
+                to="/livegames"
+                className={`${styles.navItemText} ${
+                  collapseSidebar && styles.textRemove
+                }  text-[#FFC72E]`}
+              >
+                Live Games
+              </NavLink>
+            </li>
+          </>
+        )}
       </div>
 
       <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/winners'>
+          <NavLink to="/winners">
             <img src={winners} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/winners'
+            to="/winners"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -88,12 +93,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
 
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/activity'>
+          <NavLink to="/activity">
             <img src={activity} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/activity'
+            to="/activity"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -105,12 +110,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
 
       <div className={`rounded-[8px] bg-[#70008c] ${styles.navItemWrapper}`}>
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/notifications'>
+          <NavLink to="/notifications">
             <img src={notification} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/notifications'
+            to="/notifications"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -120,12 +125,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
 
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/wallet'>
+          <NavLink to="/wallet">
             <img src={wallet} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/wallet'
+            to="/wallet"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -135,12 +140,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
 
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/history'>
+          <NavLink to="/history">
             <img src={history} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/history'
+            to="/history"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -150,12 +155,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
 
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/referrals'>
+          <NavLink to="/referrals">
             <img src={referral} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/referrals'
+            to="/referrals"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
@@ -165,12 +170,12 @@ const Sidebar2 = ({ toggle, collapseSidebar, toggleHandler }) => {
         </li>
 
         <li className={`bg-[#70008c] ${styles.navItem}`}>
-          <NavLink to='/settings'>
+          <NavLink to="/settings">
             <img src={setting} className={`${styles.navItemImage}`} />
           </NavLink>
 
           <NavLink
-            to='/settings'
+            to="/settings"
             className={`${styles.navItemText} ${
               collapseSidebar && styles.textRemove
             }`}
