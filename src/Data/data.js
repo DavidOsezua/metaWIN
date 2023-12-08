@@ -87,44 +87,34 @@ export const liveWins2 = [
 ];
 export const liveWins = [
   {
-    image: pic1,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
     image: pic3,
     content: 'Ox1xccccc',
-    amount: '$6,966',
+    amount: '$300',
   },
   {
-    image: pic2,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    image: pic1,
+    content: 'DarkHorse',
+    amount: '$2059',
   },
   {
     image: pic4,
-    content: 'Ox1xccccc',
+    content: 'Jezz',
+    amount: '$30',
+  },
+  {
+    image: pic2,
+    content: 'WolfPack',
+    amount: ' $15',
+  },
+  {
+    image: pic5,
+    content: 'DarkHorse',
     amount: '$6,966',
   },
   {
     image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic2,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic4,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'WolfPack',
+    amount: '$1561',
   },
   {
     image: pic3,
@@ -133,28 +123,53 @@ export const liveWins = [
   },
   {
     image: pic1,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'Ox17Fe26',
+    amount: '$15',
   },
   {
     image: pic4,
     content: 'Ox1xccccc',
-    amount: '$6,966',
+    amount: '$14',
   },
   {
     image: pic2,
+    content: 'Jezz',
+    amount: ' $890',
+  },
+  {
+    image: pic5,
+    content: 'NightHawk',
+    amount: '$6,966',
+  },
+  {
+    image: pic3,
     content: 'Ox1xccccc',
+    amount: '$300',
+  },
+  {
+    image: pic1,
+    content: 'DarkHorse',
+    amount: '$2059',
+  },
+  {
+    image: pic4,
+    content: 'Jezz',
+    amount: '$30',
+  },
+  {
+    image: pic2,
+    content: 'WolfPack',
+    amount: ' $15',
+  },
+  {
+    image: pic5,
+    content: 'DarkHorse',
     amount: '$6,966',
   },
   {
     image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'WolfPack',
+    amount: '$1561',
   },
   {
     image: pic3,
@@ -163,28 +178,53 @@ export const liveWins = [
   },
   {
     image: pic1,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'Ox17Fe26',
+    amount: '$15',
   },
   {
     image: pic4,
     content: 'Ox1xccccc',
-    amount: '$6,966',
+    amount: '$14',
   },
   {
     image: pic2,
+    content: 'Jezz',
+    amount: ' $890',
+  },
+  {
+    image: pic5,
+    content: 'NightHawk',
+    amount: '$6,966',
+  },
+  {
+    image: pic3,
     content: 'Ox1xccccc',
+    amount: '$300',
+  },
+  {
+    image: pic1,
+    content: 'DarkHorse',
+    amount: '$2059',
+  },
+  {
+    image: pic4,
+    content: 'Jezz',
+    amount: '$30',
+  },
+  {
+    image: pic2,
+    content: 'WolfPack',
+    amount: ' $15',
+  },
+  {
+    image: pic5,
+    content: 'DarkHorse',
     amount: '$6,966',
   },
   {
     image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'WolfPack',
+    amount: '$1561',
   },
   {
     image: pic3,
@@ -193,52 +233,22 @@ export const liveWins = [
   },
   {
     image: pic1,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'Ox17Fe26',
+    amount: '$15',
   },
   {
     image: pic4,
     content: 'Ox1xccccc',
-    amount: '$6,966',
+    amount: '$14',
   },
   {
     image: pic2,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
+    content: 'Jezz',
+    amount: ' $890',
   },
   {
     image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic5,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic3,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic1,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic4,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic2,
-    content: 'Ox1xccccc',
-    amount: '$6,966',
-  },
-  {
-    image: pic5,
-    content: 'Ox1xccccc',
+    content: 'NightHawk',
     amount: '$6,966',
   },
 ];
