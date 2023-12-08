@@ -203,7 +203,7 @@ const Wheel = () => {
             </div>
 
             <button
-              onClick={startRotation}
+              onClick={makeSpin}
               className="flex items-center text-[0.9rem] gap-[0.5rem] bg-[#FF6665] w-full py-[1rem] justify-center rounded-md "
             >
               Spin <img src={spinIcon} className="circle" />

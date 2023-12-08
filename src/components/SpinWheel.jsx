@@ -12,9 +12,9 @@ function SpinWheel({ wheelRef }) {
         ref={wheelRef}
         className="image"
         onTransitionEnd={async () => {
-          wheelRef.current.style.transition = "";
-          wheelRef.current.style.transform = "";
-          toast.error("You lose");
+          // wheelRef.current.style.transition = "";
+          // wheelRef.current.style.transform = "";
+          // toast.error("You lose");
         }}
       />
 
