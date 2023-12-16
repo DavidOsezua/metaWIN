@@ -1,15 +1,15 @@
-import React from 'react';
-import { HeaderEmpty } from '../components';
-import '../App.css';
+import React from "react";
+import { HeaderEmpty } from "../components";
+import "../App.css";
 
 const TermsAndConditionsPage = () => {
   return (
     <section className={`bg-[#70008C] ${`section`} transition`}>
       <HeaderEmpty />
 
-      <div className='policyContentContainer'>
-        <div className='policyContainer'>
-          <h3 className='title'>Terms of Service - MetaWin.com</h3>
+      <div className="policyContentContainer">
+        <div className="policyContainer">
+          <h3 className="title">Terms of Service - MetaWin.com</h3>
           <p>Issued on February 1st 2023</p>
           <p>
             These Terms and Conditions form a binding legal agreement between
@@ -45,8 +45,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>DEFINITIONS</h3>
+        <div className="policyContainer">
+          <h3 className="title">DEFINITIONS</h3>
           <p>
             1.0. Collective Action means any claim as part of a class, group,
             collective, coordinated, consolidated, mass, or representative
@@ -138,8 +138,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'> 2. YOUR PARTICIPATION</h3>
+        <div className="policyContainer">
+          <h3 className="title"> 2. YOUR PARTICIPATION</h3>
           <p>RestrictionsYou hereby declare and warrant that:</p>
           <p>
             2.0.0. You are over 18 years of age or such higher minimum legal age
@@ -234,8 +234,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>3. LICENCE</h3>
+        <div className="policyContainer">
+          <h3 className="title">3. LICENCE</h3>
           <p>
             3.0. Subject to your agreement and continuing compliance with these
             Terms and Conditions, MetaWin grants You a personal, non-exclusive,
@@ -263,8 +263,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>4. YOUR CUSTOMER ACCOUNT</h3>
+        <div className="policyContainer">
+          <h3 className="title">4. YOUR CUSTOMER ACCOUNT</h3>
           <p>
             4.0. Our system allows for customer account per wallet address,
             including any Inactive Accounts, on the Platform.
@@ -368,8 +368,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>5. GAMES</h3>
+        <div className="policyContainer">
+          <h3 className="title">5. GAMES</h3>
           <p>5.0. Rules</p>
           <p>
             5.0.0. Games offered on the Platform may have their own rules which
@@ -598,8 +598,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>6. Swapping ETH into your MetaWin balance</h3>
+        <div className="policyContainer">
+          <h3 className="title">6. Swapping ETH into your MetaWin balance</h3>
           <p>
             6.0. You can participate in any or MetaWin’s instant games if you
             have sufficient ETH in your MetaWin balance. MetaWin will not give
@@ -640,8 +640,8 @@ const TermsAndConditionsPage = () => {
           </p>
         </div>
 
-        <div className='policyContainer'>
-          <h3 className='title'>7. Swapping ETH out of your MetaWin balance</h3>
+        <div className="policyContainer">
+          <h3 className="title">7. Swapping ETH out of your MetaWin balance</h3>
           <p>
             7.0. Swaps out of your MetaWin balance will be made to the crypto
             wallet you have associated with your MetaWin account.
@@ -672,45 +672,6 @@ const TermsAndConditionsPage = () => {
             7.6. Swaps out carry a maximum limit of 5 ETH per 24 hours period.
           </p>
         </div>
-        {/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- */}
       </div>
     </section>
   );

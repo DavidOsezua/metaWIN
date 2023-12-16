@@ -1,16 +1,16 @@
-import React from 'react';
-import { HeaderEmpty } from '../components';
-import '../App.css';
+import React from "react";
+import { HeaderEmpty } from "../components";
+import "../App.css";
 
 const PolicyPage = () => {
   return (
     <section className={`bg-[#70008C] ${`section`} transition`}>
       <HeaderEmpty />
 
-      <div className='policyContentContainer'>
+      <div className="policyContentContainer">
         {/* FIRST CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>1.0 Introduction</h3>
+        <div className="policyContainer">
+          <h3 className="title">1.0 Introduction</h3>
           <p>
             Your privacy is important to us, and we are committed to protecting
             your personal information. We will be clear and open about why we
@@ -41,11 +41,11 @@ const PolicyPage = () => {
         </div>
 
         {/* SECOND CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>2.0 Who is in control of your information?</h3>
+        <div className="policyContainer">
+          <h3 className="title">2.0 Who is in control of your information?</h3>
           <p>
             Throughout this Privacy policy, "MetaWin", "we", "our" and "us"
-            relates to Metawin.com. Your information is held by us on servers
+            relates to Metawin.app. Your information is held by us on servers
             based in Ireland and elsewhere from time to time. If you have any
             concerns or would like further information about how MetaWin handles
             your personal information, you can contact us at support@metawin.com
@@ -53,8 +53,8 @@ const PolicyPage = () => {
         </div>
 
         {/* THIRD CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>3.0 Information we collect about you</h3>
+        <div className="policyContainer">
+          <h3 className="title">3.0 Information we collect about you</h3>
           <p>
             Throughout this Privacy policy, "MetaWin", "we", "our" and "us"
             relates to Metawin.com. Your information is held by us on servers
@@ -62,7 +62,7 @@ const PolicyPage = () => {
             concerns or would like further information about how MetaWin handles
             your personal information, you can contact us at support@metawin.com
           </p>
-          <h3 className='title'>Personally identifiable information</h3>
+          <h3 className="title">Personally identifiable information</h3>
           <p>
             You provide this information to us in the process of setting up an
             account, participating in games and using the services of the
@@ -75,7 +75,7 @@ const PolicyPage = () => {
             the website Personally disclose the information in public areas of
             the website Provide it when you contact our customer support team
           </p>
-          <h3 className='title'>The information includes your:</h3>
+          <h3 className="title">The information includes your:</h3>
           <ul>
             <li>-Username First and surname</li>
             <li>- Date of birth</li>
@@ -113,7 +113,7 @@ const PolicyPage = () => {
             quality of our services.
           </p>
 
-          <h3 className='title'>Cookies</h3>
+          <h3 className="title">Cookies</h3>
           <p>
             MetaWin uses cookies to ensure our website works efficiently and to
             enhance your visits to our platform. Further information can be
@@ -122,8 +122,8 @@ const PolicyPage = () => {
         </div>
 
         {/* FOURTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>
+        <div className="policyContainer">
+          <h3 className="title">
             4.0 How and why we use your personal information
           </h3>
           <p>
@@ -146,7 +146,7 @@ const PolicyPage = () => {
             how to exercise these rights. These rights are in bold following
             each category.
           </p>
-          <h3 className='title'>Providing our products and services</h3>
+          <h3 className="title">Providing our products and services</h3>
           <p>
             We use your personal information to enable you to use our websites,
             to set up your account, participate in the online games and to
@@ -163,7 +163,7 @@ const PolicyPage = () => {
             to not use our services and close your account.
           </p>
 
-          <h3 className='title'>Legal and Regulatory Requirements</h3>
+          <h3 className="title">Legal and Regulatory Requirements</h3>
           <p>
             MetaWin are legally bound; to comply with these requirements, we
             carry out identity verification, fraud prevention and anti-money
@@ -190,7 +190,7 @@ const PolicyPage = () => {
             information used in this way, your option is to not use our services
             and close your account.
           </p>
-          <h3 className='title'>To monitor our website performance</h3>
+          <h3 className="title">To monitor our website performance</h3>
           <p>
             As detailed above, we use cookies and traffic analysis in order to
             improve the performance of our website and services available. We
@@ -205,7 +205,7 @@ const PolicyPage = () => {
             than managing your cookies this may mean you need to close your
             account.
           </p>
-          <h3 className='title'>Marketing</h3>
+          <h3 className="title">Marketing</h3>
           <p>
             If you have given us your consent to do so, we will send you offers
             and promotions via email, SMS or online. We do not share your
@@ -215,16 +215,16 @@ const PolicyPage = () => {
         </div>
 
         {/* FIFTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>5.0 Your Rights</h3>
-          <h3 className='title'>Your rights to rectification</h3>
+        <div className="policyContainer">
+          <h3 className="title">5.0 Your Rights</h3>
+          <h3 className="title">Your rights to rectification</h3>
           <p>
             If you believe the personal information we hold on you is incorrect,
             you have the right for this to be rectified. For any information
             that cannot be updated through your account online, please contact
             support@metawin.com
           </p>
-          <h3 className='title'>
+          <h3 className="title">
             Your right to request a copy of your personal information
           </h3>
           <p>
@@ -242,7 +242,7 @@ const PolicyPage = () => {
             as soon as we can and tell you how long we think it will take, such
             request may also incur an administration cost.
           </p>
-          <h3 className='title'>Your right to complain to the regulator</h3>
+          <h3 className="title">Your right to complain to the regulator</h3>
           <p>
             your privacy rights, you have the right to complain to the Data
             Protection Commission by visiting this site:
@@ -251,8 +251,8 @@ const PolicyPage = () => {
         </div>
 
         {/* SIXTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>6.0 Sharing your personal information</h3>
+        <div className="policyContainer">
+          <h3 className="title">6.0 Sharing your personal information</h3>
           <p>We may disclose your Personal Data to third parties:</p>
           <p>
             if we are under a duty to disclose or share your personal
@@ -284,8 +284,8 @@ const PolicyPage = () => {
         </div>
 
         {/* SEVENTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>7.0 Security</h3>
+        <div className="policyContainer">
+          <h3 className="title">7.0 Security</h3>
           <p>
             We understand the importance of security and the techniques needed
             to secure information. We store all of the Personal Information we
@@ -299,8 +299,8 @@ const PolicyPage = () => {
         </div>
 
         {/* EIGHT CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>8.0 Retention</h3>
+        <div className="policyContainer">
+          <h3 className="title">8.0 Retention</h3>
           <p>
             We retain personal information for as long as we reasonably require
             it for legal or business purposes. In determining data retention
@@ -312,8 +312,8 @@ const PolicyPage = () => {
         </div>
 
         {/* NINTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>9.0 Third-Party Practices</h3>
+        <div className="policyContainer">
+          <h3 className="title">9.0 Third-Party Practices</h3>
           <p>
             We cannot ensure the protection of any information that you provide
             to a third-party online site that links to or from the services or
@@ -335,8 +335,8 @@ const PolicyPage = () => {
           </p>
         </div>
         {/* TENTH CONTENT */}
-        <div className='policyContainer'>
-          <h3 className='title'>10.0 Disclaimer</h3>
+        <div className="policyContainer">
+          <h3 className="title">10.0 Disclaimer</h3>
           <p>
             The Services operate ‘AS-IS’ and ‘AS-AVAILABLE’ without liability of
             any kind. We are not responsible for events beyond our direct
