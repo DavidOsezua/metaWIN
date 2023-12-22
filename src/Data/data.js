@@ -438,13 +438,13 @@ export const data = [
 ];
 
 /* **************** VARIABLE FOR AMOUNT SELECTION IN THE SPIN WHEEL PAGE ******************** */
-export const ethAmt = [50, 100, 200];
+export const ethAmt = [100, 200, 500];
 
 /* **************** VARIABLE FOR POTENTIAL IN THE WINS SPIN WHEEL PAGE ******************** */
 export const potentialWins = [10000, 50000, 100000];
 
 /* **************** VARIABLE FOR NUMBER OF SPINS IN THE SPIN WHEEL PAGE ******************** */
-export const numberOfSpins = ["low", "medium", "high"];
+export const numberOfSpins = [10, 20, 50];
 
 export const socialLinks = [
   { img: linkdin },

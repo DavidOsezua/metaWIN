@@ -48,7 +48,7 @@ const _to = "0x207d64575318AEF41976973Ead1CbC96ef79f2F0";
 const Wheel = () => {
   const wheelRef = useRef();
   const [amount, setAmount] = useState(100);
-  const [active, setActive] = useState("low");
+  const [active, setActive] = useState(10);
   const [etherPrice, setEtherPrice] = useState(1);
   const [etherAmt, setEtherAmt] = useState(0);
   const publicClient = getPublicClient({ chainId: mainChain.id });
@@ -143,9 +143,12 @@ const Wheel = () => {
           >
             <div>
               {/* **************** AMOUNT LABEL ******************** */}
-              <div className="flex justify-between items-center pb-[0.9rem]">
+              <div className="flex justify-between items-center pb-[0.3rem]">
                 <p>Amount:</p>
-                <p>{etherAmt.toFixed(3)} ETH</p>
+                {/* <p>{etherAmt.toFixed(3)} ETH</p> */}
+                <p>
+                  Price per spin: <span>${active}</span>
+                </p>
               </div>
               {/* **************** AMOUNT SELECTION ******************** */}
               <div
@@ -169,24 +172,43 @@ const Wheel = () => {
               </div>
             </div>
 
+            <div className="flex gap-[10px] w-[100] justify-between">
+              <button className="w-[100%] bg-[#FF6665] py-[1rem] px-[2rem] rounded-[0.5rem] font-bold text-[1.1rem]">
+                Deposit
+              </button>
+              <button className="w-[100%] bg-[#FFC72E] py-[1rem] px-[2rem] rounded-[0.5rem]  text-[#39014F] font-bold text-[1.1rem]">
+                Withdraw
+              </button>
+            </div>
+
             {/* **************** POTENTIAL WINS ******************** */}
             <div>
-              <p className="pb-[0.9rem]">potential Wins</p>
-              <div className="flex  justify-between gap-[0.8rem]">
-                {potentialWins.map((potentialWin, index) => (
+              <p className="pb-[0.3rem]">Balance:</p>
+              <div className="">
+                {/* {potentialWins.map((potentialWin, index) => (
                   <p
                     className="bg-[#3C0054] w-[7rem] text-center py-[0.5rem] text-[0.9rem] rounded-md"
                     key={index}
                   >
                     {potentialWin}
                   </p>
-                ))}
+                ))} */}
+
+                <p className="bg-[#3C0054] w-[100%] text-left py-[0.5rem] px-4 text-[0.9rem] rounded-md">
+                  ${amount}
+                </p>
               </div>
             </div>
 
             {/* **************** NUMBER OF SPINS ******************** */}
             <div>
-              <p>Numbers of spins</p>
+              <div className="flex justify-between w-[100%]">
+                <p>price per spin $</p>
+                <p>
+                  Spins Remaining: <span>0</span>/<span>{amount / active}</span>
+                </p>
+              </div>
+
               <div className="flex gap-[0.9rem] justify-between bg-[#3C0054] py-[0.7rem] px-[1rem] rounded-md text-[0.9rem] text-[#CACACA]">
                 {numberOfSpins.map((spin, index) => (
                   <span
@@ -194,16 +216,17 @@ const Wheel = () => {
                     onClick={() => activeHandler(spin)}
                     className={`${
                       active === spin ? styles.active : ""
-                    } cursor-pointer `}
+                    } cursor-pointer  text-[#fff] text-center`}
                   >
-                    {spin.slice(0, 1).toUpperCase() + spin.slice(1)}
+                    {/* {spin.slice(0, 1).toUpperCase() + spin.slice(1)} */}{" "}
+                    {spin}
                   </span>
                 ))}
               </div>
             </div>
 
             <button
-              onClick={makeSpin}
+              onClick={startRotation}
               className="flex items-center text-[0.9rem] gap-[0.5rem] bg-[#FF6665] w-full py-[1rem] justify-center rounded-md "
             >
               Spin <img src={spinIcon} className="circle" />
