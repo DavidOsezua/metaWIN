@@ -11,6 +11,9 @@ import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
 import { axiosInstance } from "../axios";
+import Modal from "../components/Modal";
+import ModalContent1 from "../components/ModalContent1";
+
 
 //The wheel data
 const wheelData = [
@@ -130,8 +133,21 @@ const Wheel = () => {
     console.log(spinValue);
     setActive(spinValue);
   };
+
+
+    const [modal, setModal] = useState(false);
+    const modalHandler = () => {
+      setModal(!modal);
+    };
+
+ 
   return (
     <section className={`${styles.section} transition`}>
+      {!modal && (
+        <Modal>
+          <ModalContent1 modalHandler={modalHandler} />
+        </Modal>
+      )}
       <HeaderEmpty />
 
       <div className={`${styles.container}`}>

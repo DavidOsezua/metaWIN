@@ -13,7 +13,7 @@ const CokkiePolicyPage = () => {
           <h3 className='title'>1.0 Introduction</h3>
           <p>
             MetaWin may use cookies, web beacons, tracking pixels, and other
-            tracking technologies when you visit our website MetaWin.com,
+            tracking technologies when you visit our website MetaWins.app,
             including any other media form, media channel, mobile website, or
             mobile application related or connected thereto (collectively, the
             “Site”) to help customize the Site and improve your experience.
@@ -163,7 +163,7 @@ const CokkiePolicyPage = () => {
           <h3 className='title'>7.0 Contact us</h3>
           <p>
             If you have questions or comments about this Cookie Policy, please
-            contact us at: support@metawin.com */
+            contact us at: support@metawins.app */
           </p>
         </div>
       </div>

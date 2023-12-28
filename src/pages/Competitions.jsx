@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
-import styles from './Competitions.module.css';
-import { liveWins, miniGames } from '../Data/data';
-import Modal from '../components/Modal';
+import React, { useContext, useEffect, useState, useRef } from "react";
+import styles from "./Competitions.module.css";
+import { liveWins, miniGames } from "../Data/data";
+import Modal from "../components/Modal";
+import ModalContent from "../components/ModalContent";
 
 import {
   Hero,
@@ -9,11 +10,11 @@ import {
   Slider,
   HeaderEmpty,
   MiniGameCard,
-} from '../components'; // These imports are coming from the index.js file in the component folder. This method minimizes the number of import used in a particular component
-import Table from '../components/Table';
-import { NavLink } from 'react-router-dom';
-import { Zoom, Fade } from 'react-awesome-reveal';
-import '../App.css';
+} from "../components"; // These imports are coming from the index.js file in the component folder. This method minimizes the number of import used in a particular component
+import Table from "../components/Table";
+import { NavLink } from "react-router-dom";
+import { Zoom, Fade } from "react-awesome-reveal";
+import "../App.css";
 
 /* This Competitions Component renders the Competiton page on the website. It has two component in it which are the Livewin-Gamecard item and the Livewin-GameCards .  */
 
@@ -40,8 +41,8 @@ export const LiveWinCards = () => {
   }, [currentIndex]);
 
   return (
-    <div className=' '>
-      <p className='text-[#fff] pb-[1rem] pl-[1rem] pt-[1rem]'>Live wins</p>
+    <div className=" ">
+      <p className="text-[#fff] pb-[1rem] pl-[1rem] pt-[1rem]">Live wins</p>
       <div className={`${styles.slideContainer}`} ref={sliderRef}>
         {liveWins.map((liveWin, index) => (
           <div className={`${styles.slide}`} key={index}>
@@ -59,9 +60,9 @@ export const GameCardItem = ({ liveWin }) => {
     <Zoom>
       <GameCard>
         <img src={liveWin.image} />
-        <div className='text-center pt-[0.3rem] '>
-          <p className='text-white'>{liveWin.content}</p>
-          <p className='text-[#FFC72E]'>{liveWin.amount}</p>
+        <div className="text-center pt-[0.3rem] ">
+          <p className="text-white">{liveWin.content}</p>
+          <p className="text-[#FFC72E]">{liveWin.amount}</p>
         </div>
       </GameCard>
     </Zoom>
@@ -81,7 +82,11 @@ const Competitions = () => {
 
   return (
     <section className={`bg-[#70008C] ${styles.section} transition`}>
-      {modal && <Modal modalHandler={modalHandler} />}
+      {modal && (
+        <Modal>
+          <ModalContent modalHandler={modalHandler} />
+        </Modal>
+      )}
       <HeaderEmpty />
 
       <LiveWinCards />
@@ -91,7 +96,7 @@ const Competitions = () => {
       </div>
 
       <div>
-        <p className='text-[#fff] pb-[1rem] pl-[1rem] pt-[1rem]'>Mini Games</p>
+        <p className="text-[#fff] pb-[1rem] pl-[1rem] pt-[1rem]">Mini Games</p>
 
         {/* The MiniGame cards */}
         <div className={`${styles.slideContainer}`}>
@@ -100,11 +105,11 @@ const Competitions = () => {
               <Zoom>
                 <MiniGameCard>
                   <NavLink to={miniGame.path}>
-                    <img src={miniGame.image} className='  rounded-[20px] ' />
+                    <img src={miniGame.image} className="  rounded-[20px] " />
                   </NavLink>
-                  <div className='text-center pt-[0.3rem]'>
-                    <p className='text-white'>{miniGame.content}</p>
-                    <p className='text-[#FFC72E]'>{miniGame.amount}</p>
+                  <div className="text-center pt-[0.3rem]">
+                    <p className="text-white">{miniGame.content}</p>
+                    <p className="text-[#FFC72E]">{miniGame.amount}</p>
                   </div>
                 </MiniGameCard>
               </Zoom>

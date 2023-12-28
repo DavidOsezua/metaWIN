@@ -90,7 +90,7 @@ const KYCPolicy = () => {
           </p>
           <p>
             1.5 - Contact us: <br/> If you have any questions about our KYC Policy,
-            please contact us: support@metawin.com
+            please contact us: support@metawins.app
           </p>
         </div>
       </div>
