@@ -14,7 +14,6 @@ import { axiosInstance } from "../axios";
 import Modal from "../components/Modal";
 import ModalContent1 from "../components/ModalContent1";
 
-
 //The wheel data
 const wheelData = [
   { deg: 360, value: 0.5, color: "purple" },
@@ -134,22 +133,21 @@ const Wheel = () => {
     setActive(spinValue);
   };
 
+  const [modal, setModal] = useState(false);
+  const modalHandler = () => {
+    setModal(!modal);
+  };
 
-    const [modal, setModal] = useState(false);
-    const modalHandler = () => {
-      setModal(!modal);
-    };
-
- 
   return (
     <section className={`${styles.section} transition`}>
+      /* This modal will only pop up when the number of user's spin has exceeded
+      it's limit. */
       {!modal && (
         <Modal>
           <ModalContent1 modalHandler={modalHandler} />
         </Modal>
       )}
       <HeaderEmpty />
-
       <div className={`${styles.container}`}>
         {/* **************** CONTAINER ******************** */}
         <div className={`flex ${styles.top}`}>
