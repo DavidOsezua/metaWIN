@@ -142,11 +142,11 @@ const Wheel = () => {
     <section className={`${styles.section} transition`}>
       /* This modal will only pop up when the number of user's spin has exceeded
       it's limit. */
-      {!modal && (
+      {/* {!modal && (
         <Modal>
           <ModalContent1 modalHandler={modalHandler} />
         </Modal>
-      )}
+      )} */}
       <HeaderEmpty />
       <div className={`${styles.container}`}>
         {/* **************** CONTAINER ******************** */}
