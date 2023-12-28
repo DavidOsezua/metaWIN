@@ -133,10 +133,10 @@ const Wheel = () => {
     setActive(spinValue);
   };
 
-  const [modal, setModal] = useState(false);
-  const modalHandler = () => {
-    setModal(!modal);
-  };
+  // const [modal, setModal] = useState(false);
+  // const modalHandler = () => {
+  //   setModal(!modal);
+  // };
 
   return (
     <section className={`${styles.section} transition`}>
