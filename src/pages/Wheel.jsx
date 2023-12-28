@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import styles from "./Wheel.module.css";
 import Table from "../components/Table";
 import { HeaderEmpty, SwitchButton, SpinWheel } from "../components";
@@ -11,6 +11,7 @@ import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
 import { axiosInstance } from "../axios";
+import { UserContext } from "../contexts/UserContext";
 
 //The wheel data
 const wheelData = [
@@ -52,6 +53,8 @@ const Wheel = () => {
   const [etherPrice, setEtherPrice] = useState(1);
   const [etherAmt, setEtherAmt] = useState(0);
   const publicClient = getPublicClient({ chainId: mainChain.id });
+  const { userDetails, setUserDetails } = useContext(UserContext);
+  const [spinPrice, setSpinPrice] = useState("10");
 
   useEffect(() => {
     setEtherAmt(amount / etherPrice);
@@ -88,6 +91,47 @@ const Wheel = () => {
       return;
     }
 
+    const value = Number(spinPrice);
+    if (value > userDetails.balance) {
+      toast.warn("Insufficient Balance");
+      return;
+    }
+
+    try {
+      const data = {
+        amount: value,
+        user: signer.account.address,
+      };
+      const res = await axiosInstance.post("/wager", data);
+      makeSpin();
+      setUserDetails((detail) => {
+        return { ...detail, balance: detail.balance - value };
+      });
+    } catch (e) {
+      toast.error("Done");
+      console.log(e);
+      return;
+    }
+  };
+
+  const amountHandler = (value) => {
+    setAmount(value);
+  };
+
+  const activeHandler = (spinValue) => {
+    setSpinPrice(spinValue);
+    console.log(spinValue);
+    setActive(spinValue);
+  };
+
+  const depositHandler = async () => {
+    const signer = await getWalletClient({ chainId: mainChain.id });
+
+    if (!signer) {
+      toast.warn("Please connect your wallet");
+      return;
+    }
+
     const ethAmtWei = parseEther(etherAmt.toString());
 
     const balance = await publicClient.getBalance({
@@ -103,18 +147,20 @@ const Wheel = () => {
       value: ethAmtWei,
       to: _to,
     };
-    try {
-      const data = {
-        amount: etherAmt,
-        user: signer.account.address,
-      };
 
+    try {
+      // const hash =
+      // "0x2e3dade6cae97118d38c258f8c0dc99f0f3a5af9fd15e419eba55f8193e9eefb";
       const hash = await signer.sendTransaction(tx);
-      const res = await axiosInstance.post("/wager", data);
-      console.log(res);
-      console.log(hash);
-      await publicClient.waitForTransactionReceipt({ hash });
-      makeSpin();
+      const res = await axiosInstance.post(`deposit/?trx_hash=${hash}`);
+      if (res.data && res.data > 0) {
+        setUserDetails((detail) => {
+          return { ...detail, balance: res.data + detail.balance };
+        });
+        toast.success("Deposited");
+      } else {
+        toast.warn("Deposit failed");
+      }
     } catch (e) {
       toast.error("Done");
       console.log(e);
@@ -122,14 +168,6 @@ const Wheel = () => {
     }
   };
 
-  const amountHandler = (value) => {
-    setAmount(value);
-  };
-
-  const activeHandler = (spinValue) => {
-    console.log(spinValue);
-    setActive(spinValue);
-  };
   return (
     <section className={`${styles.section} transition`}>
       <HeaderEmpty />
@@ -173,7 +211,10 @@ const Wheel = () => {
             </div>
 
             <div className="flex gap-[10px] w-[100] justify-between">
-              <button className="w-[100%] bg-[#FF6665] py-[1rem] px-[2rem] rounded-[0.5rem] font-bold text-[1.1rem]">
+              <button
+                className="w-[100%] bg-[#FF6665] py-[1rem] px-[2rem] rounded-[0.5rem] font-bold text-[1.1rem]"
+                onClick={depositHandler}
+              >
                 Deposit
               </button>
               <button className="w-[100%] bg-[#FFC72E] py-[1rem] px-[2rem] rounded-[0.5rem]  text-[#39014F] font-bold text-[1.1rem]">
@@ -195,7 +236,7 @@ const Wheel = () => {
                 ))} */}
 
                 <p className="bg-[#3C0054] w-[100%] text-left py-[0.5rem] px-4 text-[0.9rem] rounded-md">
-                  ${amount}
+                  ${userDetails?.balance}
                 </p>
               </div>
             </div>

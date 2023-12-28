@@ -16,7 +16,7 @@ export const UserContextProvider = ({ children }) => {
     const res = await axiosInstance.get(
       `/user?address=${address}&ref_code=${refCode}`
     );
-    // console.log(res.data);
+
     setUserDetails(res.data);
   };
 
@@ -29,7 +29,7 @@ export const UserContextProvider = ({ children }) => {
   }, [address]);
 
   return (
-    <UserContext.Provider value={{ userDetails }}>
+    <UserContext.Provider value={{ userDetails, setUserDetails }}>
       {children}
     </UserContext.Provider>
   );
