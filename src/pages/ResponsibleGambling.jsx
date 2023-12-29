@@ -39,7 +39,7 @@ const ResponsibleGambling = () => {
             <br /> - Company (referred to as either "the Company", "We", "Us" or
             "Our" in this Agreement) refers to Asobi N.V. <br />
             - Service refers to the Website.
-            <br />- Website refers to Metawin.com
+            <br />- Website refers to Metawins.app
             <br />- You means the individual accessing or using the Service, or
             the company, or other legal entity on behalf of which such
             individual is accessing or using the Service, as applicable.
@@ -76,7 +76,7 @@ const ResponsibleGambling = () => {
             additional costs for you:
           </p>
           <p>
-            email: support@metawin.com <br />
+            email: support@metawins.app <br />
             Our Support will of course not give out any information about You
             without Your consent to anyone else
           </p>
@@ -93,7 +93,7 @@ const ResponsibleGambling = () => {
 
         <div className='policyContainer'>
           <h2 className='title'>
-            Helpful hints for responsible gambling at Metawin.com
+            Helpful hints for responsible gambling at Metawins.app
           </h2>
           <p>
             We recommend you think about the following hints, before gambling in
@@ -172,7 +172,7 @@ const ResponsibleGambling = () => {
             future steps and what is needed from you.
           </p>
           <p>
-            email: support@metawin.com
+            email: support@metawins.app
             <br /> Please keep in mind that Self Exclusion is permanent for the
             set time span and will not be undone for your own protection.
           </p>

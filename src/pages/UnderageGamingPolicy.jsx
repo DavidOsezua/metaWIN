@@ -10,7 +10,7 @@ const UnderageGamingPolicy = () => {
         <h2 className="title"> Underage Gaming Policy</h2>
         <div className="policyContainer">
           <p>
-            Upon completing the sign-up process for MetaWin.com, you expressly
+            Upon completing the sign-up process for MetaWins.app, you expressly
             declare that you are aged 18 years or above. This statement serves
             as a representation of your legal age and capacity to enter into
             binding agreements in accordance with applicable laws and

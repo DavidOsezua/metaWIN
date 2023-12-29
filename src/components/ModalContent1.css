@@ -1,0 +1,10 @@
+@media screen and (max-width:600px){
+    .modalContent{
+        width: 15rem;
+        padding: 1rem;
+    }
+.text{
+    width: 100%;
+    font-size: 0.55rem;
+}
+}

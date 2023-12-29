@@ -18,7 +18,7 @@ const PolicyPage = () => {
             choices or rights, we will explain these to you.
           </p>
           <p>
-            This Privacy Notice explains how MetaWin.com uses your personal
+            This Privacy Notice explains how MetaWins.app uses your personal
             information when you’re using our website.
           </p>
           <p>
@@ -29,7 +29,7 @@ const PolicyPage = () => {
             Conditions and our Privacy Policy. You have the right to cease using
             the website at any time; however we may still be legally required to
             retain some of your personal information. This Privacy Notice
-            explains how MetaWin.com uses your personal information when you’re
+            explains how MetaWins.app uses your personal information when you’re
             using our website.
           </p>
           <p>
@@ -48,7 +48,7 @@ const PolicyPage = () => {
             relates to Metawin.app. Your information is held by us on servers
             based in Ireland and elsewhere from time to time. If you have any
             concerns or would like further information about how MetaWin handles
-            your personal information, you can contact us at support@metawin.com
+            your personal information, you can contact us at support@metawins.app
           </p>
         </div>
 
@@ -57,10 +57,10 @@ const PolicyPage = () => {
           <h3 className="title">3.0 Information we collect about you</h3>
           <p>
             Throughout this Privacy policy, "MetaWin", "we", "our" and "us"
-            relates to Metawin.com. Your information is held by us on servers
+            relates to Metawins.app Your information is held by us on servers
             based in Ireland and elsewhere from time to time. If you have any
             concerns or would like further information about how MetaWin handles
-            your personal information, you can contact us at support@metawin.com
+            your personal information, you can contact us at support@metawins.app
           </p>
           <h3 className="title">Personally identifiable information</h3>
           <p>
@@ -96,7 +96,7 @@ const PolicyPage = () => {
           <p>
             The information is also required for billing and payments purposes
             and for the protection of minors. You can amend and update this
-            information by contacting support@metawin.com. This data is for
+            information by contacting support@metawins.app. This data is for
             internal use only and is never passed to any third parties except
             those stated below.
           </p>
@@ -222,14 +222,14 @@ const PolicyPage = () => {
             If you believe the personal information we hold on you is incorrect,
             you have the right for this to be rectified. For any information
             that cannot be updated through your account online, please contact
-            support@metawin.com
+            support@metawins.app
           </p>
           <h3 className="title">
             Your right to request a copy of your personal information
           </h3>
           <p>
             If you would like a copy of the personal information we hold about
-            you, you should request it through emailing support@metawin.com and
+            you, you should request it through emailing support@metawins.app and
             we will provide you with a form to complete. The form is not
             compulsory but helps us to provide you with the information you are
             looking for in a timely manner.

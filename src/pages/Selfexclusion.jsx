@@ -12,7 +12,7 @@ const Selfexclusion = () => {
           <p className='text-[fff]'>
             If you feel like you want to take a break, or that your gaming has
             become problematic, you may voluntarily exclude yourself from the
-            MetaWin platform by emailing support@metawin.com. You may request to
+            MetaWin platform by emailing support@metawins.app You may request to
             exclude yourself from the MetaWin platform by choosing one of the
             following options:
           </p>

@@ -9,7 +9,7 @@ const TermsAndConditionsPage = () => {
 
       <div className="policyContentContainer">
         <div className="policyContainer">
-          <h3 className="title">Terms of Service - MetaWin.com</h3>
+          <h3 className="title">Terms of Service - MetaWins.app</h3>
           <p>Issued on February 1st 2023</p>
           <p>
             These Terms and Conditions form a binding legal agreement between
@@ -104,7 +104,7 @@ const TermsAndConditionsPage = () => {
           <p>
             1.10. Platform means any URL or mobile application belonging to, or
             licensed to, MetaWin and branded as part of the “MetaWin” family of
-            games, including the website located at https://www.metawin.com, and
+            games, including the website located at https://www.metawins.app, and
             all subdomains, subpages and successor sites thereof, as well as all
             Games, features, tools and services available thereon.
           </p>
@@ -132,7 +132,7 @@ const TermsAndConditionsPage = () => {
           <p>1.16. MetaWin Games means any game played.</p>
           <p>1.17. MetaWin, We, we, Us, Our or our means Metawin</p>
           <p>
-            1.18. Website means the website located at https://metawin.com, any
+            1.18. Website means the website located at https://metawins.app, any
             other related sites operated by Us and all subdomains, subpages and
             successor sites thereof.
           </p>
@@ -275,7 +275,7 @@ const TermsAndConditionsPage = () => {
           <p>
             4.1. AccuracyYou are required to always keep your registration
             details up to date. If you update any of your personal information,
-            contact Customer Support via email at support@metawin.com in order
+            contact Customer Support via email at support@metawins.app in order
             to update your details. If provided, the name that you used at
             registration must be identical to that listed on your government
             issued identification. Please note that any changes to your personal
@@ -498,7 +498,7 @@ const TermsAndConditionsPage = () => {
           </p>
           <p>
             5.0.23. If you suspect another user of suspicious activity send an
-            email to support@metawin.com
+            email to support@metawins.app
           </p>
           <p>
             5.0.24. MetaWin reserves the right to amend Competition end times.
@@ -652,7 +652,7 @@ const TermsAndConditionsPage = () => {
           </p>
           <p>
             7.2. MetaWin users who wish to recover funds held in closed or
-            suspended accounts, must send an email to support@metawin.com with
+            suspended accounts, must send an email to support@metawins.app with
             their request.
           </p>
           <p>
@@ -856,7 +856,7 @@ If you open an Account and/or participate in any Game offered on the Platform wh
 
 15.1. Our Privacy Policy is inseparably linked to these Terms and Conditions and its acceptance is a prerequisite to account registration.
 
-15.2. If you have given consent when registering to receive marketing communications from MetaWin in respect of its offerings by way of email, post, SMS and telephone notifications, you may unsubscribe at any time by contacting Customer Support via email at support@metawin.com, alternatively you may use the contact preferences facility available online.
+15.2. If you have given consent when registering to receive marketing communications from MetaWin in respect of its offerings by way of email, post, SMS and telephone notifications, you may unsubscribe at any time by contacting Customer Support via email at support@metawins.app, alternatively you may use the contact preferences facility available online.
 
 Initial Resolution: If unsatisfied with our Support Team's resolution, you may escalate your complaint.
 
@@ -897,7 +897,7 @@ Senior Management Escalation: The final escalation level is a review by Senior M
 
 17. COMPLAINTS AND CUSTOMER SUPPORT
 
-17.0. If you would like to contact our Customer Support department or have a complaint regarding our Platform (including any game), you may contact us via email at support@metawin.com.
+17.0. If you would like to contact our Customer Support department or have a complaint regarding our Platform (including any game), you may contact us via email at support@metawins.app.
 
 17.1. TO PROTECT YOUR PRIVACY, ALL EMAIL COMMUNICATIONS BETWEEN YOU AND METAWIN SHOULD BE CARRIED OUT USING THE EMAIL ADDRESS THAT YOU HAVE REGISTERED AGAINST YOUR CUSTOMER ACCOUNT HELD WITH METAWIN. FAILURE TO DO SO MAY RESULT IN OUR RESPONSE BEING DELAYED.
 
@@ -1047,7 +1047,7 @@ Senior Management Escalation: The final escalation level is a review by Senior M
 
 23.6. Explanation of Terms and Conditions
 
-23.6.0. We consider these Terms and Conditions to be open and fair. If you need any explanation regarding these Terms and Conditions or any other part of our Platform contact Customer Support via email at support@metawin.com.
+23.6.0. We consider these Terms and Conditions to be open and fair. If you need any explanation regarding these Terms and Conditions or any other part of our Platform contact Customer Support via email at support@metawins.app.
 
 23.6.1. The Terms and Conditions prevail over any communication via email or chat.
 
