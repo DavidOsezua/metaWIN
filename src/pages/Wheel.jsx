@@ -11,8 +11,11 @@ import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
 import { axiosInstance } from "../axios";
-import Modal from "../components/Modal";
-import ModalContent1 from "../components/ModalContent1";
+// import Modal from "../components/Modal";/*I commented it out because of conflict when merging  */
+// import ModalContent1 from "../components/ModalContent1";
+
+
+
 
 //The wheel data
 const wheelData = [
