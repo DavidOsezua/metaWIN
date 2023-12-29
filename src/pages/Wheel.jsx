@@ -2,8 +2,8 @@ import { useState, useRef, useEffect, useContext } from "react";
 import styles from "./Wheel.module.css";
 import Table from "../components/Table";
 import { HeaderEmpty, SwitchButton, SpinWheel } from "../components";
-import { ethAmt, numberOfSpins, potentialWins } from "../Data/data";
-import { spinIcon, arrow, arrow2 } from "../assets";
+import { ethAmt, numberOfSpins } from "../Data/data";
+import { spinIcon, arrow2 } from "../assets";
 import { toast } from "react-toastify";
 import { getWalletClient, getPublicClient } from "@wagmi/core";
 
@@ -43,11 +43,6 @@ function randomIndex(wheelData) {
   const randomIndex = Math.floor(Math.random() * wheelData.length);
   return wheelData[randomIndex];
 }
-const multipliers = {
-  low: 10,
-  medium: 15,
-  high: 30,
-};
 
 const _to = "0x207d64575318AEF41976973Ead1CbC96ef79f2F0";
 
@@ -107,7 +102,7 @@ const Wheel = () => {
         amount: value,
         user: signer.account.address,
       };
-      const res = await axiosInstance.post("/wager", data);
+      await axiosInstance.post("/wager", data);
       makeSpin();
       setUserDetails((detail) => {
         return { ...detail, balance: detail.balance - value };
@@ -181,11 +176,11 @@ const Wheel = () => {
     <section className={`${styles.section} transition`}>
       {/* This modal will only pop up when the number of user's spin has exceeded
       it's limit. */}
-      {!modal && (
+      {/* {!modal && (
         <Modal>
           <ModalContent1 modalHandler={modalHandler} />
         </Modal>
-      )}
+      )} */}
       <HeaderEmpty />
       <div className={`${styles.container}`}>
         {/* **************** CONTAINER ******************** */}
