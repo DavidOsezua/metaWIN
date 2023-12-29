@@ -32,7 +32,7 @@ const ModalContent1 = ({ modalHandler }) => {
 
       <div className="flex justify-center mb-[1rem]">
         <button className="bg-[#FF6665] text-[#fff] px-[1rem] py-[0.6rem] rounded-md w-[10rem]">
-          Connect
+          Deposit
         </button>
       </div>
     </div>

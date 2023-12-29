@@ -11,6 +11,8 @@ import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
 import { axiosInstance } from "../axios";
+import Modal from "../components/Modal";
+import ModalContent1 from "../components/ModalContent1";
 /*I have created the modal already. 
 The modal that pops up when the user exceeds it's spin limit is in the component folder as modalContent1. 
 to use the modalContent1 in this file,  you have to import modal component. */
@@ -134,13 +136,19 @@ const Wheel = () => {
     setActive(spinValue);
   };
 
-
-
+  const [modal, setModal] = useState(false);
+  const modalHandler = () => {
+    setModal(!modal);
+  };
   return (
     <section className={`${styles.section} transition`}>
-      /* The modal will only pop up when the number of user's spin has exceeded
-      it's limit. */
-    
+      {/* This modal will only pop up when the number of user's spin has exceeded
+      it's limit. */}
+      {!modal && (
+        <Modal>
+          <ModalContent1 modalHandler={modalHandler} />
+        </Modal>
+      )}
       <HeaderEmpty />
       <div className={`${styles.container}`}>
         {/* **************** CONTAINER ******************** */}
