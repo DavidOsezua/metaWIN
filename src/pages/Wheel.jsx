@@ -166,10 +166,9 @@ const Wheel = () => {
       return;
     }
   };
-  
+
   return (
     <section className={`${styles.section} transition`}>
-      
       <HeaderEmpty />
       <div className={`${styles.container}`}>
         {/* **************** CONTAINER ******************** */}
