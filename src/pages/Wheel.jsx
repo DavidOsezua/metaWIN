@@ -6,7 +6,7 @@ import { ethAmt, numberOfSpins } from "../Data/data";
 import { spinIcon, arrow2 } from "../assets";
 import { toast } from "react-toastify";
 import { getWalletClient, getPublicClient } from "@wagmi/core";
-
+import { UserContext } from "../contexts/UserContext";
 import "../App.css";
 import { parseEther } from "viem";
 import { mainChain } from "../Data/chain";
