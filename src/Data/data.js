@@ -15,6 +15,12 @@ import {
   instagram,
   email,
   twitter3,
+  GOO,
+  Gold,
+  starlightPrincess,
+  speedWinner,
+  diamondStrike,
+  MetaWheels,
 } from "../assets"; //These imports are coming from the index.js file in the assests folder.
 
 /* **************** VARIABLE FOR LIVE WIN CARD IN THE COMPETITON AND LIVE WIN PAGE ******************** */
@@ -269,37 +275,37 @@ export const gaming = [
 /* **************** VARIABLE FOR MINI GAME CARD IN THE COMPETITION PAGE ******************** */
 export const miniGames = [
   {
-    image: MetaWheel,
+    image: MetaWheels,
     content: "Leaderboard Price",
     amount: "$6,966",
     path: "/wheel",
   },
   {
-    image: MetaWheel,
+    image: GOO,
     content: "Leaderboard Price",
     amount: "$1,561",
     path: "/wheel",
   },
   {
-    image: MetaWheel,
+    image: Gold,
     content: "Leaderboard Price",
     amount: "$890",
     path: "/wheel",
   },
   {
-    image: MetaWheel,
+    image: speedWinner,
     content: "Leaderboard Price",
     amount: "$2059",
     path: "/wheel",
   },
   {
-    image: MetaWheel,
+    image: starlightPrincess,
     content: "Leaderboard Price",
     amount: "$300",
     path: "/wheel",
   },
   {
-    image: MetaWheel,
+    image: diamondStrike,
     content: "Leaderboard Price",
     amount: "$696",
     path: "/wheel",

@@ -105,7 +105,10 @@ const Competitions = () => {
               <Zoom>
                 <MiniGameCard>
                   <NavLink to={miniGame.path}>
-                    <img src={miniGame.image} className="  rounded-[20px] " />
+                    <img
+                      src={miniGame.image}
+                      className="w-[9.5625rem] rounded-[20px] "
+                    />
                   </NavLink>
                   <div className="text-center pt-[0.3rem]">
                     <p className="text-white">{miniGame.content}</p>
